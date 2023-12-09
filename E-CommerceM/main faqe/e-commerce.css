@@ -137,7 +137,7 @@ nav {
     gap: 3%;
     margin-bottom: 30px;
 }
-.facet{
+/* .facet{
     margin-top: 5%;
 width: 100%;
  display: flex;
@@ -162,15 +162,15 @@ margin-bottom: 5%;
     display: flex;
     justify-content: space-evenly;
 }
-.rrjeta{
+ .rrjeta{
     display: flex;
     gap: 30px;
     align-items: center;
     width: 50%;
     height: 50%;
-    /* scale transform (1,1); */
+    scale transform (1,1); 
     text-align: center;
-}
+}  */
 .end{
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@ margin-bottom: 5%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.footer{
+/* .footer{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .logo3{
@@ -270,4 +270,74 @@ margin-bottom: 5%;
 }
 body{
     
+} */
+
+footer{
+    display: inline;
+    background-color: #DFDFDF;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+.AboutUs p{
+    margin-left: 70px;
+}
+.AboutUs a{
+    margin-left: 30px;
+}
+
+footer ul a{
+    margin-left:1%;
+    list-style: none;
+    text-decoration: none;
+    color: #111;
+    display: block;
+}
+
+.Service{
+    margin-top:-210px;
+    margin-left: 350px;
+}
+.Service p{
+    margin-left: 49px;
+}
+.Shopp{
+    margin-top: -210px;
+    margin-left: 750px;
+    
+}
+.Shopp p{
+    margin-left: 45px;
+}
+.footer_elements{
+  margin-left: 10%;
+}
+
+.SocialMedias{
+    background-color: white;
+    width: 100%;
+}
+#Payment{
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 60%;
+    height: 60%;
+}
+#FB{
+    margin-left: 100px ;
+    height: 50px;
+    width: 50px;
+}
+#IG{
+    margin-left: 50px ;
+    height: 50px;
+    width: 50px; 
+}
+#Tiktok{
+    margin-left: 50px ;
+    height: 50px;
+    width: 50px; 
+}
+#ps{
+margin-left: 37%;
 }
