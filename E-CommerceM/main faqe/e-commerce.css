@@ -92,7 +92,7 @@ nav {
 
 .Librat{
     display: inline-flex;
-    position:fixed;
+    position:absolute;
     list-style-type: none;
     color: black;
     margin-left: -99px;
