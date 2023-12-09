@@ -5,18 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
+            "pageTitle": "Main.html",
+                "url": "C:\\Users\\online\\OneDrive\\Desktop\\Projekti Web\\Projekti\\E-CommerceM\\Main.html",
+            // Add other configuration options specific to page1
+          }
     ]
 }
