@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
+
+    <link rel="stylesheet" href="First.css">
+    <link rel="website icon" type="png" href="C:\Users\online\OneDrive\Desktop\Fotot\Untitled.png">
+
+    <nav>
+        <a href="Main.html"> 
+            <img class="thaliaLogo" src="C:\Users\online\OneDrive\Desktop\Fotot\Screenshot 2023-11-16 221803.png" alt="Thalia" height="10%" width="15%">
+        </a>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Title, author, keyword, ISBN">
+
+            <button class="search-button" type="submit" onclick="funksioniSearch()" >
+            </button>
+        </div>
+
+        
+        <ul class="Items">
+            <li><a href="#" class="active">My Account</a></li>
+            <li><a href="#">Wish List</a></li>
+            <li><a href="#">Shopping cart</a></li>
+        </ul>
+
+        <ul class="Librat">
+            <a href="e-comerce.html" rel="stylesheet" href="e-commerce.css">Phones,Tabl ets</a>
+            <a href="#">Computers&Servers</a>
+            <a href="#">TV,Audio,Foto</a>
+            <a href="#">Gaming</a>
+            <a href="#">Accessory</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </ul>
+    </nav>
+
+</head>
+
+
+<body>
+    
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="C:\Users\online\OneDrive\Desktop\Fotot\Screenshot 2023-12-09 153651.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://aphrodite.gmanetwork.com/entertainment/articles/480_360_6_-20230913145636.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://t3.ftcdn.net/jpg/04/15/76/54/360_F_415765406_bNYus3fB14MOQEBTwFM6WeCmj7byxGRO.jpg" style="width:fit-content">
+    </div>
+    
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); 
+      }
+      </script>
+    <br><br><br><br>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <img src="C:\Users\online\OneDrive\Desktop\Fotot\Partners.png">
+
+    <footer><br>
+
+
+        <div class="footer_elements">
+        
+        <div class="AboutUs"> 
+            <p style="font-weight: bold;">About Thalia</p>
+            <ul>
+                <a href="#">Stay connected with Thalia</a><br>
+                <a href="#">All rights reserved</a><br>
+                <a href="#">Terms of Use</a><br>
+                <a href="#">Privacy Policy</a><br>
+            </ul>
+        </div>
+        <div class="Service"> 
+            <p style="font-weight: bold;">Service Center</p>
+            <ul>
+                <a href="#">Help</a><br>
+                <a href="#">Contact</a><br>
+                <a href="#">Returns</a><br>
+                <a href="#">Public Administration Service</a><br>
+            </ul>
+        </div>
+        <div class="Shopp"> 
+            <p style="font-weight: bold;">All about shopping</p>
+            <ul>
+                <a href="#">Questions about the order</a><br>
+                <a href="#">Buy and pay</a><br>
+                <a href="#">Shipping and delivery</a><br>
+                <a href="#">Data protection</a><br>
+            </ul>
+        </div>
+    </div>
+
+    <div class="SocialMedias">
+        <img src="C:\Users\online\OneDrive\Desktop\Fotot\Payments.png" alt="Payments" id="Payment" ></img>
+        
+        <a href="https://www.facebook.com/thalia.de" target="_blank"> <img src="https://images.thalia.media/Footer/-/f3ab2209619a458ab9f049e58fb45cbb/facebook.png" alt="facebook" id="FB"> </a>
+    
+        <a href="https://www.instagram.com/thalia_buchhandlungen/" target="_blank"> <img src="https://images.thalia.media/Footer/-/323c0decad694b80bb019605c85d10d5/instagram.png" id="IG">  </a>
+        
+        <a href="https://www.tiktok.com/@thalia_buchhandlungen" target="_blank"> <img src="https://images.thalia.media/Footer/-/17b9a0625daf4e40aacffb34e371f803/TikTok.png" id="Tiktok"> </a>
+    
+    </div>
+    <p id="ps">Copyright © 2023 Thalia DE. All rights reserved.</p>
+    <br>
+    </footer>
+      
+</body>
+
+
+</html>
