@@ -12,14 +12,14 @@ nav {
     background-color: white;
     box-shadow: 0px 0px 10px gray;
     height: 150px;
-    position: relative;
+    position: fixed;
     top: 0;
     z-index: 1000; 
 }
 .thaliaLogo{
     display: flex;
     box-sizing: border-box;
-    bottom: 60%;
+    bottom: 86%;
     left:8%;
     position:fixed;
 
@@ -84,6 +84,32 @@ nav {
 }
 .Items a:hover:not(.active){
     background-color: #000000;
+}
+.active{
+    background-color: #000000;
+}
+
+
+.Librat{
+    display: inline-flex;
+    position:fixed;
+    list-style-type: none;
+    color: black;
+    margin-left: -99px;
+    font-weight: 500;
+    top: 12%;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+}
+
+.Librat a{
+    color:black;
+    text-decoration: none;
+    display: flex;
+    padding-left: 19%;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    font-size: small;
+    padding-top: 5%;
 }
 .active{
     background-color: #000000;

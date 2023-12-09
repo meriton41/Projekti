@@ -399,6 +399,7 @@ footer{
   font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,sans-serif;
   font-size: 15px;
   width: 100%;
+  height: 300%;
 }
 .AboutUs p{
   margin-left: 70px;
@@ -421,6 +422,7 @@ footer ul a{
 }
 .Service p{
   margin-left: 49px;
+ margin-top: 12px;
 }
 .Shopp{
   margin-top: -210px;
@@ -428,7 +430,20 @@ footer ul a{
   
 }
 .Shopp p{
+  margin-top: 14px;
   margin-left: 45px;
+}
+.AboutUs ul{
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.Service ul{
+  margin-top: 15px;
+  margin-left: 42px;
+}
+.Shopp ul{
+  margin-top: 13px;
+  margin-left: 41px;
 }
 .footer_elements{
 margin-left: 10%;
