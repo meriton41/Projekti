@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // config_page1.json
         {
             "pageTitle": "Main.html",
                 "url": "C:\\Users\\online\\OneDrive\\Desktop\\Projekti Web\\Projekti\\E-CommerceM\\Main.html",
@@ -13,7 +14,7 @@
         // config_page2.json
     {
         "pageTitle": "e-comerce.html",
-        "url": "C:\\Users\\online\\OneDrive\\Desktop\\Projekti Web\\Projekti\\E-CommerceM\\Main.html",
+        "url": "C:\\Users\\online\\OneDrive\\Desktop\\Projekti Web\\Projekti\\E-CommerceM\\e-comerce.html",
         // Add other configuration options specific to page2
       }
   
