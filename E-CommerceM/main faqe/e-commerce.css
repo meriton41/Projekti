@@ -152,6 +152,9 @@ nav {
     flex: row;
     justify-content: space-evenly;
 }
+.div-items{
+    background-color:black;
+}
 .numrat{
     margin-top: 30px;
     display: flex;
