@@ -3,7 +3,9 @@ body {
     box-sizing: border-box;
     margin: 0;
     flex-direction: column;
+    padding-top: 140px; 
 }
+
 nav {
     display: flex;
     width: 100%;
@@ -11,24 +13,24 @@ nav {
     background-color: white;
     box-shadow: 0px 0px 10px gray;
     height: 150px;
-    position: relative;
+    position: fixed;
     top: 0;
     z-index: 1000; 
 }
-.thaliaLogo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.thaliaLogo{
+    display: flex;
+    box-sizing: border-box;
+    bottom: 86%;
+    left:10%;
+    position:fixed;
 
 }
 .search-container{
-    margin-top: -200px;
     display: flex;
     height: 50%;
     justify-content: center;
     margin-left: 29%;
 }
-
 
 .search-input{
     display: flex;
@@ -57,7 +59,6 @@ nav {
     cursor: pointer;
     outline: none;
 }
-
 .Items{
     font-weight: 400;
     line-height: 16px;
@@ -70,11 +71,6 @@ nav {
     background-color: #333;
     font-family:Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif" ;
     
-}
-.Items::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 .Items li{
     float: left;
@@ -92,6 +88,28 @@ nav {
 .active{
     background-color: #000000;
 }
+.Librat{
+    display: inline-flex;
+    position:fixed;
+    list-style-type: none;
+    color: black;
+    margin-left: -99px;
+    font-weight: 500;
+    top: 12%;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+}
+
+.Librat a{
+    color:black;
+    text-decoration: none;
+    display: flex;
+    padding-left: 19%;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    font-size: small;
+    padding-top: 5%;
+}
+
 
 
 .d2{
