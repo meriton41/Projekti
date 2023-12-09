@@ -1,13 +1,15 @@
-body{
+body {
     display: flex;
     box-sizing: border-box;
     margin: 0;
     flex-direction: column;
     padding-top: 140px; 
 }
+
 nav {
     display: flex;
     width: 100%;
+    margin-top: -140px;
     align-items: baseline;
     background-color: white;
     box-shadow: 0px 0px 10px gray;
@@ -19,9 +21,10 @@ nav {
 .thaliaLogo{
     display: flex;
     box-sizing: border-box;
-    bottom: 60%;
-    left:8%;
-    position:fixed;
+    bottom: 41%;
+    left:9%;
+    position:absolute;
+    height: fit-content;
 
 }
 .search-container{
@@ -58,7 +61,6 @@ nav {
     cursor: pointer;
     outline: none;
 }
-
 .Items{
     font-weight: 400;
     line-height: 16px;
@@ -88,6 +90,28 @@ nav {
 .active{
     background-color: #000000;
 }
+.Librat{
+    display: inline-flex;
+    position:absolute;
+    list-style-type: none;
+    color: black;
+    margin-left: -99px;
+    font-weight: 500;
+    top: 49%;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+}
+
+.Librat a{
+    color:black;
+    text-decoration: none;
+    display: flex;
+    padding-left: 19%;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    font-size: small;
+    padding-top: 5%;
+}
+
 
 
 .d2{
