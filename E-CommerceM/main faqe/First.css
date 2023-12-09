@@ -4,6 +4,7 @@ body {
     margin: 0;
     flex-direction: column;
     padding-top: 140px; 
+    /* background-color: #000000; */
 }
 
 nav {
@@ -122,6 +123,7 @@ nav {
   position: relative;
   margin-top: 2%;
   align-self: center;
+
 }
 .slideshow-container img{
     width: 100%;
@@ -156,17 +158,19 @@ nav {
   }
   
 
-.column {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 25%;
+  .column {
+    flex: 1;
     padding: 0 4px;
 }
+
   
   .column img {
+
     margin-top: 8px;
+    margin-left: 79px;
     vertical-align: middle;
-    width: 100%;
+    width: 25%;
+    padding: 3px;
   }
   
 
