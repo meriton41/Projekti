@@ -1,9 +1,8 @@
-body{
+body {
     display: flex;
     box-sizing: border-box;
     margin: 0;
     flex-direction: column;
-    padding-top: 140px; 
 }
 nav {
     display: flex;
@@ -16,13 +15,10 @@ nav {
     top: 0;
     z-index: 1000; 
 }
-.thaliaLogo{
-    display: flex;
-    box-sizing: border-box;
-    bottom: 60%;
-    left:8%;
-    position:fixed;
-
+.thaliaLogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 .search-container{
     display: flex;
@@ -71,6 +67,11 @@ nav {
     background-color: #333;
     font-family:Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif" ;
     
+}
+.Items::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .Items li{
     float: left;
