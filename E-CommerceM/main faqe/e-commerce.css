@@ -1,30 +1,27 @@
-body {
+body{
     display: flex;
     box-sizing: border-box;
     margin: 0;
     flex-direction: column;
     padding-top: 140px; 
 }
-
 nav {
     display: flex;
     width: 100%;
-    margin-top: -140px;
     align-items: baseline;
     background-color: white;
     box-shadow: 0px 0px 10px gray;
     height: 150px;
-    position: relative;
+    position: fixed;
     top: 0;
     z-index: 1000; 
 }
 .thaliaLogo{
     display: flex;
     box-sizing: border-box;
-    bottom: 41%;
-    left:9%;
-    position:absolute;
-    height: fit-content;
+    bottom: 86%;
+    left:8%;
+    position:fixed;
 
 }
 .search-container{
@@ -61,6 +58,7 @@ nav {
     cursor: pointer;
     outline: none;
 }
+
 .Items{
     font-weight: 400;
     line-height: 16px;
@@ -90,14 +88,16 @@ nav {
 .active{
     background-color: #000000;
 }
+
+
 .Librat{
     display: inline-flex;
-    position:absolute;
+    position:fixed;
     list-style-type: none;
     color: black;
     margin-left: -99px;
     font-weight: 500;
-    top: 49%;
+    top: 12%;
     font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
 }
 
@@ -111,7 +111,9 @@ nav {
     font-size: small;
     padding-top: 5%;
 }
-
+.active{
+    background-color: #000000;
+}
 
 
 .d2{
@@ -164,7 +166,7 @@ nav {
     gap: 3%;
     margin-bottom: 30px;
 }
-/* .facet{
+.facet{
     margin-top: 5%;
 width: 100%;
  display: flex;
@@ -189,15 +191,15 @@ margin-bottom: 5%;
     display: flex;
     justify-content: space-evenly;
 }
- .rrjeta{
+.rrjeta{
     display: flex;
     gap: 30px;
     align-items: center;
     width: 50%;
     height: 50%;
-    scale transform (1,1); 
+    /* scale transform (1,1); */
     text-align: center;
-}  */
+}
 .end{
     display: flex;
     justify-content: center;
@@ -298,7 +300,6 @@ margin-bottom: 5%;
 body{
     
 } */
-
 footer{
     display: inline;
     background-color: #DFDFDF;
@@ -368,3 +369,4 @@ footer ul a{
 #ps{
 margin-left: 37%;
 }
+
