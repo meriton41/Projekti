@@ -26,6 +26,7 @@
     font-size: 36px;
     text-align: center;
     color: black;
+    margin-bottom: 10px;
   }
   .formular .input-box{
     position: relative;
@@ -48,6 +49,7 @@
   }
   .formular label{
     color: black;
+
   }
   .input-box input::placeholder{
     color: #fff;
@@ -84,5 +86,9 @@
     color: #333;
     font-weight: 600;
   }
-
-  
+#register{
+  margin-left: 143px;
+  text-decoration:none;
+  margin-top: 10px;
+  color: black;
+}
