@@ -8,6 +8,16 @@
             "pageTitle": "Main.html",
                 "url": "C:\\Users\\online\\OneDrive\\Desktop\\Projekti Web\\Projekti\\E-CommerceM\\Main.html",
             // Add other configuration options specific to page1
-          }
+        }
+
+        // config_page2.json
+    {
+        "pageTitle": "e-comerce.html",
+        "url": "C:\\Users\\online\\OneDrive\\Desktop\\Projekti Web\\Projekti\\E-CommerceM\\Main.html",
+        // Add other configuration options specific to page2
+      }
+  
+        
+        
     ]
 }
