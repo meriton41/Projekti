@@ -19,13 +19,16 @@ nav {
     position: absolute;
     top: 10px;
     left: 10px;
+
 }
 .search-container{
+    margin-top: -200px;
     display: flex;
     height: 50%;
     justify-content: center;
     margin-left: 29%;
 }
+
 
 .search-input{
     display: flex;
