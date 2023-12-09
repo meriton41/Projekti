@@ -95,10 +95,11 @@ nav {
   position:absolute;
   list-style-type: none;
   color: black;
-  margin-left: -99px;
+  margin-left: 1px;
   font-weight: 500;
   top: 49%;
   font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+ 
 }
 
 .Librat a{
@@ -392,6 +393,7 @@ width: 100%;
 }
 
 footer{
+  margin-top: 5em;
   display: inline;
   background-color: #DFDFDF;
   font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,sans-serif;
