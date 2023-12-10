@@ -10,6 +10,86 @@
   />
   <link rel="stylesheet" href="us.css" />
   <script src="us.js" defer></script>
+  <style>
+
+    .login-container {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        right: 160px; 
+        background-color: white;
+        z-index: 1000;
+        padding: 10px; 
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+        border-radius: 5px; 
+        max-width: 200px; 
+        text-align: center; 
+    }
+
+    .login-form {
+        margin: 0;
+        color: #292929;
+        font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22px;
+        text-decoration: none;
+
+    }
+
+    .login-form input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 5px;
+        
+    }
+
+    .login-form button {
+        width: 69%;
+        padding: 8px;
+        color: white;
+        background-color: #1a1aaa;
+        border: 0;
+        border-radius: 23px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 30px;
+        outline: none;
+        padding: 8px 30px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const loginContainer = document.querySelector('.login-container');
+        const myAccountLink = document.querySelector('.Items .active');
+        const loginForm = document.querySelector('.login-form');
+
+        myAccountLink.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            loginContainer.style.display = (loginContainer.style.display === 'flex') ? 'none' : 'flex';
+        });
+
+
+        document.addEventListener('click', function (event) {
+            if (!loginContainer.contains(event.target) && event.target !== myAccountLink) {
+                loginContainer.style.display = 'none';
+            }
+        });
+    });
+</script>
 </head>
 
 <body> 
@@ -132,6 +212,20 @@
         </div>
       </div>
     </div>
+
+    <div class="login-container">
+      <form class="login-form" onsubmit=" return validimi()">
+          <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br><br>
+
+          <button type="submit" onclick="validimi()">Login</button><br><br>
+          <a href="LoginForm.html" style="text-decoration: none; color:black">Create an account</a>
+     </form>
+  </div>
 
     <footer><br>
 
