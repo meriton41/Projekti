@@ -28,10 +28,10 @@ nav {
 .thaliaLogo{
   display: flex;
   box-sizing: border-box;
-  bottom: 41%;
-  left:9%;
-  position:absolute;
-  height: fit-content;
+  bottom: 86%;
+  left:8%;
+  position:fixed;
+  
 
 }
 .search-container{
