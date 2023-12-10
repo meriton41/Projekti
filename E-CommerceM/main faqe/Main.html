@@ -59,6 +59,13 @@
 
         .login-form {
             margin: 0;
+            color: #292929;
+            font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 22px;
+            text-decoration: none;
+
         }
 
         .login-form input {
@@ -66,26 +73,33 @@
             box-sizing: border-box;
             margin-bottom: 10px;
             padding: 5px;
+            
         }
 
         .login-form button {
-            width: 50%;
+            width: 69%;
             padding: 8px;
-            background-color: #4CAF50;
             color: white;
-            border: none;
-            border-radius: 3px;
+            background-color: #1a1aaa;
+            border: 0;
+            border-radius: 23px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
             cursor: pointer;
+            display: inline-block;
+            font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 30px;
+            outline: none;
+            padding: 8px 30px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+
         }
-        .login-form .signup-button {
-            width: 50%;
-            padding: 8px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
+
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -209,15 +223,15 @@
 
       <div class="login-container">
         <form class="login-form" onsubmit=" return validimi()">
-            <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h1>
+            <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
             <label for="email">E-Mail:</label>
             <input type="email" id="email" name="email" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required><br><br>
 
-            <button type="submit" onclick="validimi()">Login</button>
-            <button type="button" class="signup-button" onclick="redirectToSignUp()">Sign Up</button>
+            <button type="submit" onclick="validimi()">Login</button><br><br>
+            <a href="LoginForm.html" style="text-decoration: none; color:black">Create an account</a>
        </form>
     </div>
     
