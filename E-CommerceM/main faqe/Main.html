@@ -208,19 +208,19 @@
       <button class="button button1">Show more</button>
 
       <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" onsubmit=" return validimi()">
             <h1>Login</h1>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" onclick="validimi()">Login</button>
             <button type="button" class="signup-button" onclick="redirectToSignUp()">Sign Up</button>
        </form>
     </div>
-
+    
 
    <br><br>
     <img src="C:\Users\online\OneDrive\Desktop\Projekti Web\Projekti\E-CommerceM\main faqe\Fotot\Partners.png">
@@ -272,11 +272,31 @@
     <p id="ps">Copyright © 2023 Thalia DE. All rights reserved.</p>
     <br>
     </footer>
-      <script>       
+
+    <script>
         function redirectToSignUp() {
-        alert("Redirecting to Sign Up page...");
-        window.open('LoginForm.html', '_blank'); 
-    }</script>
+            window.open('LoginForm.html', '_blank');
+        }
+    
+        function validimi() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+    
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email!");
+                return false;
+            }
+    
+            if (password.length < 8) {
+                alert("Password should be more than 8 characters long");
+                return false;
+            }
+            
+            alert("Login was successful");
+            return true;
+        }
+    </script>
 </body>
 
 
