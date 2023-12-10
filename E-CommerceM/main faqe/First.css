@@ -51,6 +51,7 @@ nav {
     border-radius: 0px;
     padding-left: 15px;
 }
+
 .search-button{
     display: flex;
     box-sizing: border-box;
@@ -247,6 +248,32 @@ footer ul a{
 .Shopp p{
     margin-left: 45px;
 }
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 3px solid #04AA6D;
+    border-radius: 13px;
+    width: 19%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: center; 
+  }
+  
+  .button1:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
 .footer_elements{
   margin-left: 10%;
 }
