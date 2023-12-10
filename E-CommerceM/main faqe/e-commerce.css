@@ -5,6 +5,14 @@ body{
     flex-direction: column;
     padding-top: 140px; 
 }
+h2{
+    color: #292929;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 22px;
+    text-decoration: none;
+}
 
 nav {
     display: flex;
