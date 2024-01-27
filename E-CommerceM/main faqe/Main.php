@@ -8,6 +8,7 @@
     <script src="config_page1.json" type="application/json" id="config"></script>
 
     <link rel="stylesheet" href="First.css">
+    <link rel="stylesheet" href="header.css">
     <?php include('header.php')?>
 
 </head>
@@ -90,7 +91,7 @@
           <img src="https://assets.brack.ch/images2/1/3/3/287091331/287091331_xxl3.jpg" >
           <img src="https://assets.brack.ch/images2/9/8/3/181734389/181734389_xxl3.jpg">
           <img src="https://assets.brack.ch/images2/4/4/6/302833644/302833644_xxl3.jpg">
-          <img src="https://iqq6kf0xmf.gjirafa.net/images/4d1a5a7d-6c24-4208-9eb7-cbf616d5683c/4d1a5a7d-6c24-4208-9eb7-cbf616d5683c.webp?w=400" >
+          <!-- <img src="https://iqq6kf0xmf.gjirafa.net/images/4d1a5a7d-6c24-4208-9eb7-cbf616d5683c/4d1a5a7d-6c24-4208-9eb7-cbf616d5683c.webp?w=400" > -->
           <img src="https://assets.brack.ch/images2/7/1/4/311943417/311943417_xxl3.jpg">
           <img src="https://assets.brack.ch/images2/0/1/4/311943410/311943410_xxl3.jpg">
           <img src="https://iqq6kf0xmf.gjirafa.net/images/dc404db5-7e13-4201-adc9-2a183092c1f8/dc404db5-7e13-4201-adc9-2a183092c1f8.webp?w=400">
@@ -99,7 +100,7 @@
           <img src="https://iqq6kf0xmf.gjirafa.net/images/64bcae26-97c7-4d68-8c49-f4a140da57a0/64bcae26-97c7-4d68-8c49-f4a140da57a0.webp?w=400">
           <img src="https://iqq6kf0xmf.gjirafa.net/images/42a6331d-0297-488b-81c7-f1161c658dbc/42a6331d-0297-488b-81c7-f1161c658dbc.webp?w=400">
           <img src="https://assets.brack.ch/images2/5/2/7/235129725/235129725_xxl.jpg">
-          <img src="https://iqq6kf0xmf.gjirafa.net/images/d75db5ca-c1b6-4ed2-895c-dd67a66b113f/d75db5ca-c1b6-4ed2-895c-dd67a66b113f.webp?w=400">
+          <!-- <img src="https://iqq6kf0xmf.gjirafa.net/images/d75db5ca-c1b6-4ed2-895c-dd67a66b113f/d75db5ca-c1b6-4ed2-895c-dd67a66b113f.webp?w=400"> -->
           <img src="https://iqq6kf0xmf.gjirafa.net/images/669a16b9-7451-4a33-9c90-b266759d00ae/669a16b9-7451-4a33-9c90-b266759d00ae.webp?w=400">
           <img src="https://assets.brack.ch/images2/2/7/6/235128672/235128672_xxl3.jpg">
         
@@ -108,48 +109,8 @@
 
       <br><br><br>
       <button class="button button1">Show more</button>
-
-      <div class="login-container">
-        <form class="login-form" onsubmit=" return validimi()">
-            <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <button type="submit" onclick="validimi()">Login</button><br><br>
-            <a href="LoginForm.php" style="text-decoration: none; color:black">Create an account</a>
-       </form>
-    </div>
-    
-
    <br><br>
     <?php include('footer.php')?>
-    <script>
-        function redirectToSignUp() {
-            window.open('LoginForm.php', '_blank');
-        }
-    
-        function validimi() {
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("password").value;
-    
-            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert("Please enter a valid email!");
-                return false;
-            }
-    
-            if (password.length < 8) {
-                alert("Password should be more than 8 characters long");
-                return false;
-            }
-            
-            alert("Login was successful");
-            return true;
-        }
-    </script>
 </body>
 
 

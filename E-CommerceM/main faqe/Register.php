@@ -1,19 +1,21 @@
 <?php
 include_once 'Paisjet.php';
-include_once 'PaisjaRepository.php';
+include_once 'PaisjetRepository.php';
 
 if (isset($_POST['submitbtn'])) {
-    $emri = $_POST['Emri']; 
-    $ngjyra = $_POST['Ngjyra'];
-    $cmimi = $_POST['Cmimi'];
-    $memoria = $_POST['Memoria'];
+    $emri = $_POST['emri']; 
+    $ngjyra = $_POST['ngjyra'];
+    $cmimi = $_POST['cmimi'];
+    $memoria = $_POST['memoria'];
+    $img = $_POST['img'];
    
 
-    $paisja = new Paisjet($emri, $ngjyra, $cmimi,$memoria);
+    $paisja = new Paisjet($emri, $ngjyra, $cmimi,$memoria,$img);
 
-    $PaisjaRepository = new PaisjaRepository();
-    $PaisjaRepository->inserPaisja($paisja);
+    $paisjetRepository = new PaisjetRepository();
+    $paisjetRepository->insertPaisja($paisja);
     header("location:Dashboard.php");
+    exit();
 }
 ?>
 
@@ -23,7 +25,7 @@ if (isset($_POST['submitbtn'])) {
     </head>
     <body>
         <h2>Register</h2>
-        <form action="<?php echo $SERVER['PHP_SELF']?>" method="post">  
+        <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">  
         <label>Emri:</label>    
         <input type="text" name="emri" ><br>
         <label>Ngjyra:</label>  
@@ -32,6 +34,8 @@ if (isset($_POST['submitbtn'])) {
         <input type="text" name="cmimi" ><br>
         <label>Memoria:</label>  
         <input type="text" name="memoria" ><br>
+        <label>Image:</label>  
+        <input type="file" name="img" ><br>
         <input type="submit" name="submitbtn" value="Submit">
         </form>
     </body>

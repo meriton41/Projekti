@@ -25,12 +25,12 @@
             $ngjyra =$paisja->getNgjyra();
             $cmimi = $paisja->getCmimi();
             $memoria = $paisja->getMemoria();
-            
+            $img = $paisja->getImg();
 
-            $sql = "INSERT INTO paisja(Emri, Ngjyra, Cmimi,Memoria) VALUES (?,?,?,?)";
+            $sql = "INSERT INTO paisja(Emri, Ngjyra, Cmimi,Memoria,img) VALUES (?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$emri, $ngjyra, $cmimi, $memoria]);
+            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img]);
 
             echo "<script>alert('U shtua me sukses!')</script>";
         }
@@ -48,12 +48,12 @@
 
         //Pjesa tjeter e funksioneve CRUD: update 
         //dergohet parametri ne baze te cilit e identifikojme studentin (ne kete rast id, por mund te jete edhe ndonje atribut tjeter) dhe parametrat e tjere qe mund t'i ndryshojme (emri, mbiemri, etj...)
-        public function editPaisja($id, $emri, $ngjyra, $cmimi, $memoria){
+        public function editPaisja($id, $emri, $ngjyra, $cmimi, $memoria,$img){
             $conn = $this->connection;
-            $sql = "UPDATE paisja SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=? WHERE Id=?";
+            $sql = "UPDATE paisja SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?, img=? WHERE Id=?";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $id]);
+            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $id]);
 
             echo "<script>alert('U ndryshua me sukses!')</script>";
 

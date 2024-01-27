@@ -37,52 +37,11 @@
       <br><br><br>
       <button class="button button1">Show more</button>
 
-      
-      <div class="login-container">
-        <form class="login-form" onsubmit=" return validimi()">
-            <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <button type="submit" onclick="validimi()">Login</button><br><br>
-            <a href="LoginForm.php" style="text-decoration: none; color:black">Create an account</a>
-       </form>
-    </div>
 
       <br><br>
      
   
       <?php include('footer.php')?>
-      <script>
-        function redirectToSignUp() {
-            window.open('LoginForm.php', '_blank');
-        }
-    
-        function validimi() {
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("password").value;
-    
-            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert("Please enter a valid email!");
-                return false;
-            }
-    
-            if (password.length < 8) {
-                alert("Password should be more than 8 characters long");
-                return false;
-            }
-            
-            alert("Login was successful");
-            return true;
-        }
-    </script>
-
-
-
-
+      
 </body>
 </html>

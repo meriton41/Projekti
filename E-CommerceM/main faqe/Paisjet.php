@@ -5,13 +5,15 @@ class Paisjet{
     private $Ngjyra;
     private $Cmimi;
     private $Memoria;
+    private $img;
     
 
-    public function __construct($e, $n, $c, $m){
+    public function __construct($e, $n, $c, $m,$i){
         $this->Emri=$e;
         $this->Ngjyra=$n;
         $this->Cmimi=$c;
         $this->Memoria=$m;
+        $this->img=$i;
     }
     
     public function getEmri(){
@@ -31,6 +33,7 @@ class Paisjet{
     public function getCmimi(){
         return $this->Cmimi;
     }
+    
     public function setCmimi($c){
         $this->Cmimi = $c;
     }
@@ -41,7 +44,12 @@ class Paisjet{
     public function setMemoria($m){
         $this->Memoria = $m;
     }
-
+    public function getImg(){
+        return $this->img;
+    }
+    public function setImg($i){
+        $this->img = $i;
+    }
     
     public function __toString(){
         return "Emri: ".$this->Emri." dhe ngjyra ".$this->Ngjyra;

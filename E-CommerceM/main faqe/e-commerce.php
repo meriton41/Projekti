@@ -1,3 +1,10 @@
+<?php
+include "DatabaseConnection.php";
+include_once "PaisjetRepository.php";
+
+$p = new PaisjetRepository();
+$paisja = $p->getAllPaisjet();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +13,26 @@
     <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
 
  <link rel="stylesheet" href="e-commerce.css">
+ <link rel="stylesheet"  href="header.css">
  <?php include('header.php')?>
 </head>
 <body>
+<?php
+        session_start();
+        if (isset($_SESSION['roli'])) {
+         if($_SESSION['roli']=="admin"){
+             echo"<button>
+                     <a href='Dashboard.php'>Dashboard</a>
+                 </button>";
+         }
+        }
+ require_once "DatabaseConnection.php";
+include_once "PaisjetRepository.php";
 
+$strep = new PaisjetRepository();
+$paisja= $strep->getAllPaisjet();
+
+?>
 
 <div class="d2">
     <div class="Iphone">
@@ -66,31 +89,17 @@
         <a href=""><img src="note20-removebg-preview.png" alt="SamsungNote20" width="200px" height="200px">
             <a href=""> Samsung Note 20  </a>
            </a></div>
+           <?php foreach ($paisja as $telefon) { ?>
     <div class="s5">
-        <a href=""><img src="note101-removebg-preview.png" alt="SamsunNote10" width="200px" height="200px">
-            <a href=""> Samsung Note 10 </a>
+        <a href=""><img src="<?php echo $telefon['img']?> " alt="SamsunNote10" width="200px" height="200px">
+            <a href=""> <?php echo $telefon['Emri']?> </a>
            </a></div>
-           
+           <?php } ?>
 
         </div>
 </div>
 </div>
-
-
-<!-- <div class="login-container">
-    <form class="login-form" onsubmit=" return validimi()">
-        <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <button type="submit" onclick="validimi()">Login</button><br><br>
-        <a href="LoginForm.php" style="text-decoration: none; color:black">Create an account</a>
-   </form>
-</div> -->
-<?php include('footer.php')?>
+   <?php include('footer.php')?>
 
 </body>
 

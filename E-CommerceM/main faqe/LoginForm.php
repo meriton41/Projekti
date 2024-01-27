@@ -34,7 +34,7 @@
 </head>
 <body>
   <div class="formular">
-    <form onsubmit="validimi()">
+    <form onsubmit="validimi()" method="POST">
       <h1>SignUp</h1>
 
         <label>Username:</label>

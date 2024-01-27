@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="us.css">
-  
+    <link rel="stylesheet" href="header.css">
     <script src="us.js"></script>
   
     <?php include('header.php')?>

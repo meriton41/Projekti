@@ -48,7 +48,7 @@ session_start();
 </head>
 <body>
   <div class="formular">
-    <form onsubmit="validimi()">
+    <form onsubmit="validimi()" method="POST">
       <h1>LogIn</h1>
 
         <label>E-mail:</label>
