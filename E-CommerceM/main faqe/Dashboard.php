@@ -2,10 +2,12 @@
 
 include "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
+include "function.php"; 
 
 $strep = new PaisjetRepository();
 $paisjet = $strep->getAllPaisjet();
-
+$cmrep = new Contact();
+$comment = $cmrep->getAllComments();
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +39,33 @@ $paisjet = $strep->getAllPaisjet();
                         <td><a href='delete.php?Id=<?php echo $paisja['Id']?>'>Delete</a></td>
                     </tr>
                 <?php }?> <!--e mbyllim foreach-->
+            </tbody>
+        </table>
+
+<br><br><br>
+<table>
+            <thead>
+            <tr>
+            <th>Emri</th>
+                <th>Mbiemri</th>
+                <th>Email</th>
+                <th>NrTelefonit</th>
+                <th>Comment</th>
+
+            </tr>
+            </thead>
+            <tbody>
+                <?php foreach($comment as $msg) { ?>
+                    <tr>
+                    <td><?php echo $msg['emri'];?></td>
+                        <td><?php echo $msg['mbiemri'];?></td>
+                        <td><?php echo $msg['email'];?></td>
+                        <td><?php echo $msg['nrtelefonit'];?></td>
+                        <td><?php echo $msg['comment'];?></td>
+
+
+                    </tr>
+                <?php }?> 
             </tbody>
         </table>
     </body>

@@ -18,12 +18,12 @@
         </ul>
         
         <ul class="Librat">
-            <a href="e-commerce.php">Phones,Tablets</a>
+            <a href="e-commerce.php">Phones</a>
             <a href="Computer.php">Computers&Servers</a>
             <a href="#">TV,Audio,Foto</a>
-            <a href="#">Gaming</a>
-            <a href="#">Accessory</a>
-            <a href="us.php">About Us</a>
-            <a href="#">Contact Us</a>
+            <a href="#">Tablets</a>
+            <a href="us.php">About<gap>Us</a>
+            <a href="ContactUs.php">Contact<gap>Us</a>
+            <a href="LogOut.php" style='color:blue;'>Log<gap>Out</a>
         </ul>
     </nav>

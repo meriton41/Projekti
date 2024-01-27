@@ -21,7 +21,7 @@ $paisja = $p->getAllPaisjet();
         session_start();
         if (isset($_SESSION['roli'])) {
          if($_SESSION['roli']=="admin"){
-             echo"<button>
+             echo"<button id='b1'>
                      <a href='Dashboard.php'>Dashboard</a>
                  </button>";
          }
@@ -101,14 +101,14 @@ $paisja= $strep->getAllPaisjet();
 </div>
    <?php include('footer.php')?>
 <style>
-    button  {
+    #b1{
     margin-top: 10px;
     color: black;
     width: 100px;
     height: 45px;
     border:none;
 } 
-button a{
+#b1 a{
     color:black;
 }
 </style>
