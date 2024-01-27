@@ -22,7 +22,7 @@ $paisja = $p->getAllPaisjet();
         if (isset($_SESSION['roli'])) {
          if($_SESSION['roli']=="admin"){
              echo"<button>
-                     <a href='Dashboard.php'>Dashboard</a>
+                     <a href='Dashboard.php 'style='margin-top:30px: color:black;'>Dashboard</a>
                  </button>";
          }
         }
