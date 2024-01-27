@@ -1,16 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
-
- <link rel="stylesheet" href="e-commerce.css">
-</head>
-<body>
     <nav>
-        <a href="Main.html"> 
+        <a href="Main.php"> 
             <img class="thaliaLogo" src="Screenshot 2023-11-16 221803 1.png" alt="Thalia" height="9%" width="14%">
         </a>
     
@@ -23,22 +12,22 @@
     
         
         <ul class="Items">
-            <li><a href="#" class="active">My Account</a></li>
+            <li><a href="LoginForm1.php" class="active">My Account</a></li>
             <li><a href="#">Wish List</a></li>
             <li><a href="#">Shopping cart</a></li>
         </ul>
-    
+        
         <ul class="Librat">
-            <a href="e-comerce.html">Phones,Tabl ets</a>
-            <a href="Computers.html">Computers&Servers</a>
+            <a href="e-commerce.php">Phones,Tabl ets</a>
+            <a href="Computer.php">Computers&Servers</a>
             <a href="#">TV,Audio,Foto</a>
             <a href="#">Gaming</a>
             <a href="#">Accessory</a>
-            <a href="us.html">About Us</a>
+            <a href="us.php">About Us</a>
             <a href="#">Contact Us</a>
         </ul>
     </nav>
-    <style>
+    <!-- <style>
 
         .login-container {
             display: none;
@@ -95,10 +84,10 @@
             text-align: center;
             text-decoration: none;
 
-        }
+        } -->
 
-    </style>
-    <script>
+    <!-- </style> -->
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const loginContainer = document.querySelector('.login-container');
             const myAccountLink = document.querySelector('.Items .active');
@@ -119,4 +108,4 @@
         });
     </script>
 
-
+ -->
