@@ -9,118 +9,7 @@
  <?php include('header.php')?>
 </head>
 <body>
-    <!-- <nav>
-        <a href="Main.html"> 
-            <img class="thaliaLogo" src="Screenshot 2023-11-16 221803 1.png" alt="Thalia" height="9%" width="14%">
-        </a>
-    
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Title, author, keyword, ISBN">
-    
-            <button class="search-button" type="submit" onclick="funksioniSearch()" >
-            </button>
-        </div>
-    
-        
-        <ul class="Items">
-            <li><a href="#" class="active">My Account</a></li>
-            <li><a href="#">Wish List</a></li>
-            <li><a href="#">Shopping cart</a></li>
-        </ul>
-    
-        <ul class="Librat">
-            <a href="e-comerce.html">Phones,Tabl ets</a>
-            <a href="Computers.html">Computers&Servers</a>
-            <a href="#">TV,Audio,Foto</a>
-            <a href="#">Gaming</a>
-            <a href="#">Accessory</a>
-            <a href="us.html">About Us</a>
-            <a href="#">Contact Us</a>
-        </ul>
-    </nav>
-    <style>
 
-        .login-container {
-            display: none;
-            position: absolute;
-            top: 70px; 
-            right: 160px; 
-            background-color: white;
-            z-index: 1000;
-            padding: 10px; 
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
-            border-radius: 5px; 
-            max-width: 200px; 
-            text-align: center; 
-        }
-
-        .login-form {
-            margin: 0;
-            color: #292929;
-            font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 22px;
-            text-decoration: none;
-
-        }
-
-        .login-form input {
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-            padding: 5px;
-            
-        }
-
-        .login-form button {
-            width: 69%;
-            padding: 8px;
-            color: white;
-            background-color: #1a1aaa;
-            border: 0;
-            border-radius: 23px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            color: #fff;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
-            font-size: 17px;
-            font-weight: 700;
-            line-height: 30px;
-            outline: none;
-            padding: 8px 30px;
-            position: relative;
-            text-align: center;
-            text-decoration: none;
-
-        }
-
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginContainer = document.querySelector('.login-container');
-            const myAccountLink = document.querySelector('.Items .active');
-            const loginForm = document.querySelector('.login-form');
-
-            myAccountLink.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                loginContainer.style.display = (loginContainer.style.display === 'flex') ? 'none' : 'flex';
-            });
-
-
-            document.addEventListener('click', function (event) {
-                if (!loginContainer.contains(event.target) && event.target !== myAccountLink) {
-                    loginContainer.style.display = 'none';
-                }
-            });
-        });
-    </script> -->
-
-
-<div class="d1">
 
 <div class="d2">
     <div class="Iphone">
@@ -154,7 +43,7 @@
 
    
 </div>
-<div class="r1">
+
 
 <div class="samsung">
     <div class="samsung1">
@@ -188,7 +77,7 @@
 </div>
 
 
-<div class="login-container">
+<!-- <div class="login-container">
     <form class="login-form" onsubmit=" return validimi()">
         <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
         <label for="email">E-Mail:</label>
@@ -198,143 +87,11 @@
         <input type="password" id="password" name="password" required><br><br>
 
         <button type="submit" onclick="validimi()">Login</button><br><br>
-        <a href="LoginForm.html" style="text-decoration: none; color:black">Create an account</a>
+        <a href="LoginForm.php" style="text-decoration: none; color:black">Create an account</a>
    </form>
-</div>
-
-
-
-</div>
-
-<div class="div-items">
-
-    <div class="numrat">
-        <button class="bt"><</button>
-        <button class="bt">1</button>
-        <button class="bt">2</button>
-        <button class="bt">3</button>
-        <button class="bt">4</button>
-        <button class="bt">...</button>
-        <button class="bt">></button>
-    </div>
-
-
-   
-</div>
-<!-- <div class="facet">
-
-    <div class="facebook" style="text-decoration: none; position: relative;">
-   <a href="">
-    <img src="" alt="aa">
-    <p>Facebook</p>
-
-   </a>
-    </div>
-    <div class="instagram">
-        <a href="">
-            <img src="" alt="instagram">
-            <p>Insatgram</p>
-        </a>
-
-    </div>
-    <div class="twitter">
-        <a href="">
-            <img src="" alt="twitter">
-            <p>Twitter</p>
-        </a>
-    </div>
-
-
 </div> -->
+<?php include('footer.php')?>
 
-<!-- <div class="footer">
-    <div class="loca">
-     <div class="logo3">
-    <img src="unnamed-removebg-preview.png" alt="logo" width="30px">
-     <h2>Thalia</h2>
-    </div>
-        <h3>Magj. Prishtine-Rahovec</h3>
-        <h3>Fushe Kosove 1020</h3>
-        <h3>Kosove</h3>
-    </div>
-    <div class="rrjeta">
-        <div class="facebook" style="text-decoration: none; position: relative;">
-            <a href="">
-             <img src="facebook.png" alt="Facebook">
-             <p>Facebook</p>
-         
-            </a>
-             </div>
-             <div class="instagram">
-                 <a href="">
-                     <img src="instagram.png" alt="Instagram">
-                     <p>Insatgram</p>
-                 </a>
-         
-             </div>
-             <div class="twitter">
-                 <a href="">
-                     <img src="twitter.png" alt="Twitter">
-                     <p>Twitter</p>
-                 </a>
-             </div>
-
-    </div>
-
-
-</div>
-
-<div class="end">
-    <h3>2023 - All rights reserved by Meriton to <img src="unnamed-removebg-preview.png" alt="" height="30">Thalia</h3>
-</div> -->
-<footer><br>
-
-
-    <div class="footer_elements">
-    
-    <div class="AboutUs"> 
-        <p style="font-weight: bold;">About Thalia</p>
-        <ul>
-            <a href="#">Stay connected with Thalia</a><br>
-            <a href="#">All rights reserved</a><br>
-            <a href="#">Terms of Use</a><br>
-            <a href="#">Privacy Policy</a><br>
-        </ul>
-    </div>
-    <div class="Service"> 
-        <p style="font-weight: bold;">Service Center</p>
-        <ul>
-            <a href="#">Help</a><br>
-            <a href="#">Contact</a><br>
-            <a href="#">Returns</a><br>
-            <a href="#">Public Administration Service</a><br>
-        </ul>
-    </div>
-    <div class="Shopp"> 
-        <p style="font-weight: bold;">All about shopping</p>
-        <ul>
-            <a href="#">Questions about the order</a><br>
-            <a href="#">Buy and pay</a><br>
-            <a href="#">Shipping and delivery</a><br>
-            <a href="#">Data protection</a><br>
-        </ul>
-    </div>
-</div>
-
-<div class="SocialMedias">
-    <img src="Payments.png" alt="Payments" id="Payment" ></img>
-    
-    <a href="https://www.facebook.com/thalia.de" target="_blank"> <img src="https://images.thalia.media/Footer/-/f3ab2209619a458ab9f049e58fb45cbb/facebook.png" alt="facebook" id="FB"> </a>
-
-    <a href="https://www.instagram.com/thalia_buchhandlungen/" target="_blank"> <img src="https://images.thalia.media/Footer/-/323c0decad694b80bb019605c85d10d5/instagram.png" id="IG">  </a>
-    
-    <a href="https://www.tiktok.com/@thalia_buchhandlungen" target="_blank"> <img src="https://images.thalia.media/Footer/-/17b9a0625daf4e40aacffb34e371f803/TikTok.png" id="Tiktok"> </a>
-
-</div>
-<p id="ps">Copyright © 2023 Thalia DE. All rights reserved.</p>
-<br>
-</footer>
-  
 </body>
 
 

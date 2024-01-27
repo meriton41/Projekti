@@ -1,3 +1,28 @@
+<?php
+    session_start();
+
+    include("db.php");
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
+        $confirmpassword = $_POST['confirmpassword'];
+
+        if(!empty($email) && !empty($pass) && !is_numeric($email) && !empty($confirmpassword)){
+            $query = "insert into form (name, email, pass,confirmpassword) values('$name', '$email', '$pass','$confirmpassword')";
+
+            mysqli_query($con, $query);
+            echo "<script type='text/javascript'> alert('Successfully Register')</script>";
+        }
+        else{
+            echo "<script type='text/javascript'> alert('Please Enter some Valid Information')</script>";
+        }
+
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +38,11 @@
       <h1>SignUp</h1>
 
         <label>Username:</label>
-        <input type="text" placeholder="Username" id="emri" name="emri" class="input-box" required>
+        <input type="text" placeholder="Username" id="emri" name="name" class="input-box" required>
         <label>E-mail:</label>
         <input type="text" placeholder="E-mail" id="email" name="email" class="input-box" required>
         <label>Password:</label>
-        <input type="password" placeholder="Password" id="fjalekalimi" name="fjalekalimi" class="input-box" required>
+        <input type="password" placeholder="Password" id="fjalekalimi" name="pass" class="input-box" required>
         <label>Confirm password:</label>
         <input type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" class="input-box" required>
 
@@ -27,7 +52,7 @@
         <a href="#">Forgot Password</a>
       </div>
       <button type="submit" class="btn">Register</button>
-      <a  href="Main.html"><p id="register">LogIn</p></a>
+      <a  href="Main.php"><p id="register">LogIn</p></a>
     </form>
   </div>
 

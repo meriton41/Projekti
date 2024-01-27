@@ -8,119 +8,7 @@
     <script src="config_page1.json" type="application/json" id="config"></script>
 
     <link rel="stylesheet" href="First.css">
-    <link rel="website icon" type="png" href="C:\Users\online\OneDrive\Desktop\Projekti Web\Projekti\E-CommerceM\main faqe\Fotot\Untitled.png">
-
-    <nav>
-        <a href="Main.html"> 
-            <img class="thaliaLogo" src="Screenshot 2023-11-16 221803 1.png" alt="Thalia" height="10%" width="15%">
-        </a>
-
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Title, author, keyword, ISBN">
-
-            <button class="search-button" type="submit" onclick="funksioniSearch()" >
-            </button>
-        </div>
-
-        <ul class="Items">
-            <li><a href="" class="active">My Account</a></li>
-            <li><a href="#">Wish List</a></li>
-            <li><a href="#">Shopping cart</a></li>
-        </ul>
-
-        <ul class="Librat">
-            <a href="e-comerce.html" >Phones,Tablets</a>
-            <a href="Computers.html">Computers&Servers</a>
-            <a href="#">TV,Audio,Foto</a>
-            <a href="#">Gaming</a>
-            <a href="#">Accessory</a>
-            <a href="us.html">About Us</a>
-            <a href="#">Contact Us</a>
-        </ul>
-
-
-    </nav>
-
-    <style>
-
-        .login-container {
-            display: none;
-            position: absolute;
-            top: 70px; 
-            right: 160px; 
-            background-color: white;
-            z-index: 1000;
-            padding: 10px; 
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
-            border-radius: 5px; 
-            max-width: 200px; 
-            text-align: center; 
-        }
-
-        .login-form {
-            margin: 0;
-            color: #292929;
-            font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 22px;
-            text-decoration: none;
-
-        }
-
-        .login-form input {
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-            padding: 5px;
-            
-        }
-
-        .login-form button {
-            width: 69%;
-            padding: 8px;
-            color: white;
-            background-color: #1a1aaa;
-            border: 0;
-            border-radius: 23px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            color: #fff;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
-            font-size: 17px;
-            font-weight: 700;
-            line-height: 30px;
-            outline: none;
-            padding: 8px 30px;
-            position: relative;
-            text-align: center;
-            text-decoration: none;
-
-        }
-
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginContainer = document.querySelector('.login-container');
-            const myAccountLink = document.querySelector('.Items .active');
-            const loginForm = document.querySelector('.login-form');
-
-            myAccountLink.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                loginContainer.style.display = (loginContainer.style.display === 'flex') ? 'none' : 'flex';
-            });
-
-
-            document.addEventListener('click', function (event) {
-                if (!loginContainer.contains(event.target) && event.target !== myAccountLink) {
-                    loginContainer.style.display = 'none';
-                }
-            });
-        });
-    </script>
+    <?php include('header.php')?>
 
 </head>
 
@@ -130,34 +18,34 @@
     <div class="slideshow-container">
    
     <div class="mySlides fade">
-      <a href="Computers.html" target="_blank"> <img src="https://assets.brack.ch/images2/6/2/4/311943426/311943426_xxl3.jpg" style="width:100%"></a>
+      <a href="Computer.php" target="_blank"> <img src="https://assets.brack.ch/images2/6/2/4/311943426/311943426_xxl3.jpg" style="width:100%"></a>
     </div>
     <div class="mySlides fade">
-        <a href="Computers.html" target="_blank"><img src="https://assets.brack.ch/images2/1/9/3/287091391/287091391_xxl3.jpg" style="width:100%"></a>
+        <a href="Computer.php" target="_blank"><img src="https://assets.brack.ch/images2/1/9/3/287091391/287091391_xxl3.jpg" style="width:100%"></a>
     </div>
     
     <div class="mySlides fade">
-       <a href="e-comerce.html" target="_blank"> <img src="https://assets.brack.ch/images2/5/5/3/287091355/287091355_xxl3.jpg" style="width:100%"></a>
+       <a href="e-comerce.php" target="_blank"> <img src="https://assets.brack.ch/images2/5/5/3/287091355/287091355_xxl3.jpg" style="width:100%"></a>
     </div>
 
     <div class="mySlides fade">
-        <a href="e-comerce.html" target="_blank"> <img src="https://assets.brack.ch/images2/9/7/2/268281279/268281279_xxl3.jpg" style="width:100%"></a>
+        <a href="e-comerce.php" target="_blank"> <img src="https://assets.brack.ch/images2/9/7/2/268281279/268281279_xxl3.jpg" style="width:100%"></a>
     </div>
 
     <div class="mySlides fade">
-       <a href="e-comerce.html" target="_blank"> <img src="https://assets.brack.ch/images2/2/8/2/268281282/268281282_xxl3.jpg" style="width: 100%;"></a>
+       <a href="e-comerce.php" target="_blank"> <img src="https://assets.brack.ch/images2/2/8/2/268281282/268281282_xxl3.jpg" style="width: 100%;"></a>
     </div>
 
     <div class="mySlides fade">
-        <a href="Computers.html" target="_blank"> <img src="https://assets.brack.ch/images2/3/2/4/287091423/287091423_xxl3.jpg" style="width: 100%;"></a>
+        <a href="Computer.php" target="_blank"> <img src="https://assets.brack.ch/images2/3/2/4/287091423/287091423_xxl3.jpg" style="width: 100%;"></a>
     </div>
 
     <div class="mySlides fade">
-        <a href="Computers.html" target="_blank"> <img src="https://assets.brack.ch/images2/0/6/4/287091460/287091460_xxl3.jpg" style="width: 100%;"></a>
+        <a href="Computers.php" target="_blank"> <img src="https://assets.brack.ch/images2/0/6/4/287091460/287091460_xxl3.jpg" style="width: 100%;"></a>
     </div>
 
     <div class="mySlides fade">
-        <a href="Computers.html" target="_blank"> <img src="https://assets.brack.ch/images2/6/4/6/221362646/221362646_xxl3.jpg" style="width: 100%;"></a>
+        <a href="Computer.php" target="_blank"> <img src="https://assets.brack.ch/images2/6/4/6/221362646/221362646_xxl3.jpg" style="width: 100%;"></a>
     </div>
     
     </div>
@@ -231,65 +119,16 @@
             <input type="password" id="password" name="password" required><br><br>
 
             <button type="submit" onclick="validimi()">Login</button><br><br>
-            <a href="LoginForm.html" style="text-decoration: none; color:black">Create an account</a>
+            <a href="LoginForm.php" style="text-decoration: none; color:black">Create an account</a>
        </form>
     </div>
     
 
    <br><br>
-    <img src="C:\Users\online\OneDrive\Desktop\Projekti Web\Projekti\E-CommerceM\main faqe\Fotot\Partners.png">
-
-    <footer><br>
-
-
-        <div class="footer_elements">
-        
-        <div class="AboutUs"> 
-            <p style="font-weight: bold;">About Thalia</p>
-            <ul>
-                <a href="#">Stay connected with Thalia</a><br>
-                <a href="#">All rights reserved</a><br>
-                <a href="#">Terms of Use</a><br>
-                <a href="#">Privacy Policy</a><br>
-            </ul>
-        </div>
-        <div class="Service"> 
-            <p style="font-weight: bold;">Service Center</p>
-            <ul>
-                <a href="#">Help</a><br>
-                <a href="#">Contact</a><br>
-                <a href="#">Returns</a><br>
-                <a href="#">Public Administration Service</a><br>
-            </ul>
-        </div>
-        <div class="Shopp"> 
-            <p style="font-weight: bold;">All about shopping</p>
-            <ul>
-                <a href="#">Questions about the order</a><br>
-                <a href="#">Buy and pay</a><br>
-                <a href="#">Shipping and delivery</a><br>
-                <a href="#">Data protection</a><br>
-            </ul>
-        </div>
-    </div>
-
-    <div class="SocialMedias">
-        <img src="Payments.png" alt="Payments" id="Payment" ></img>
-        
-        <a href="https://www.facebook.com/thalia.de" target="_blank"> <img src="https://images.thalia.media/Footer/-/f3ab2209619a458ab9f049e58fb45cbb/facebook.png" alt="facebook" id="FB"> </a>
-    
-        <a href="https://www.instagram.com/thalia_buchhandlungen/" target="_blank"> <img src="https://images.thalia.media/Footer/-/323c0decad694b80bb019605c85d10d5/instagram.png" id="IG">  </a>
-        
-        <a href="https://www.tiktok.com/@thalia_buchhandlungen" target="_blank"> <img src="https://images.thalia.media/Footer/-/17b9a0625daf4e40aacffb34e371f803/TikTok.png" id="Tiktok"> </a>
-    
-    </div>
-    <p id="ps">Copyright © 2023 Thalia DE. All rights reserved.</p>
-    <br>
-    </footer>
-
+    <?php include('footer.php')?>
     <script>
         function redirectToSignUp() {
-            window.open('LoginForm.html', '_blank');
+            window.open('LoginForm.php', '_blank');
         }
     
         function validimi() {
