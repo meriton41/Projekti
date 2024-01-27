@@ -46,21 +46,7 @@
       </div>
     </div>
 
-    <!-- <div class="login-container">
-      <form class="login-form" onsubmit=" return validimi()">
-          <h2 style="font-family:  Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";;">I already have an account</h2>
-          <label for="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required>
 
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required><br><br>
-
-          <button type="submit" onclick="validimi()">Login</button><br><br>
-          <a href="LoginForm.php" style="text-decoration: none; color:black">Create an account</a>
-     </form>
-  </div> -->
-
-  
     <?php include('footer.php')?>
  
 

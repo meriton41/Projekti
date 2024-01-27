@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
     <link rel="stylesheet" href="Computers.css">
-    
+    <link rel="stylesheet" href="header.css">
 
     <?php include('header.php')?>
 

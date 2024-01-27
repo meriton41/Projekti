@@ -14,7 +14,7 @@ $paisjet = $strep->getAllPaisjet();
     <link rel="stylesheet"  href="header.css">
     <?php include('header.php')?>
     <body>
-        <a href="Register.php" style="margin-top:40px; margin-left:40px;">Register</a>
+        <a href="Register.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
         <table>
             <thead>
             <tr>

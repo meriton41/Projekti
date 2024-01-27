@@ -1,3 +1,7 @@
+.Librat a{
+  display: flex;
+  margin-left: 20px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -31,41 +35,7 @@ display* {
     background-color: rgb(238, 247, 239);
     flex-wrap: nowrap;
   }
-  .main{
-    width: 100%;
-    
-    
-}
-.logo{
-    width: 100%;
-    display: flex;
-}
-.search{
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    border: 1px solid black;
-    border-radius: 10px;
-    justify-content: flex-end;
-}
-.logo1{
-    margin-left: 15px;
-    
-
-    display: flex;
-    justify-content: flex-start;
-   
-
-}
-.titulli{
-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-
-}
+  
   .container {
     max-width: 1200px;
     width: 95%;
@@ -176,7 +146,7 @@ width: 100%;
     bottom: -10px;
   }
   
-  /* Styles for mobile and tablets */
+  /* Stilizim per telefona dhe tableta*/
   @media only screen and (max-width: 1023px) {
     .slider-wrapper .slide-button {
       display: none !important;
@@ -197,28 +167,7 @@ width: 100%;
       width: 20%;
     }
   }
-  /* .facet{
-    margin-top: 5%;
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   margin-bottom: 5%;
-}
-  .footer{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2em;
-}
-.rrjeta{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    scale transform (1,1); 
-    text-align: center;
-}*/
+  
 .end{
     display: flex;
     justify-content: center;

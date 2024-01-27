@@ -22,7 +22,7 @@ $paisja = $p->getAllPaisjet();
         if (isset($_SESSION['roli'])) {
          if($_SESSION['roli']=="admin"){
              echo"<button>
-                     <a href='Dashboard.php 'style='margin-top:30px: color:black;'>Dashboard</a>
+                     <a href='Dashboard.php'>Dashboard</a>
                  </button>";
          }
         }
@@ -100,7 +100,18 @@ $paisja= $strep->getAllPaisjet();
 </div>
 </div>
    <?php include('footer.php')?>
-
+<style>
+    button  {
+    margin-top: 10px;
+    color: black;
+    width: 100px;
+    height: 45px;
+    border:none;
+} 
+button a{
+    color:black;
+}
+</style>
 </body>
 
 
