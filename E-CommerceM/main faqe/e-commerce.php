@@ -14,6 +14,7 @@ $paisja = $p->getAllPaisjet();
 
  <link rel="stylesheet" href="e-commerce.css">
  <link rel="stylesheet"  href="header.css">
+ <link rel="stylesheet" href="footer.css">
  <?php include('header.php')?>
 </head>
 <body>

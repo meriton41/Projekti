@@ -6,6 +6,7 @@
     <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
     <link rel="stylesheet" href="Computers.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 
     <?php include('header.php')?>
 

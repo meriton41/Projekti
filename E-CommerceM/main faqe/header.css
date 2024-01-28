@@ -121,3 +121,46 @@ nav {
     font-size: small;
     padding-top: 5%;
 }
+/*Responsiviteti*/
+@media only screen and (max-width: 768px) {
+    .search-container {
+        margin-top: 3%; 
+        margin-left: 13%;
+        width: 30%;
+        height: 20%;
+    }
+
+    .search-button {
+        width: 10%; 
+    }
+
+    .div-items {
+        display: flex;
+        flex-shrink: calc(3);
+        margin-right: 5%; 
+    }
+
+    .Items li {
+        margin-right: 8px; 
+    }
+
+    .Librat {
+        top: 8%; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Librat a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1%;
+    }
+
+    #pic {
+        margin-top: 80px; 
+    }
+
+    .thaliaLogo {
+        bottom: 80%; 
+        left: 2%; 
+    }
+}
