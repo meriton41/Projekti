@@ -1,10 +1,3 @@
-<?php
-include "DatabaseConnection.php";
-include_once "PaisjetRepository.php";
-
-$p = new PaisjetRepository();
-$paisja = $p->getAllPaisjet();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
