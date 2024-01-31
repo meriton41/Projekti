@@ -136,7 +136,7 @@ nav {
     position:fixed;
     list-style-type: none;
     color: black;
-    margin-left: -65px;
+    margin-left: -20px;
     font-weight: 500;
     top: 12%;
     font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
