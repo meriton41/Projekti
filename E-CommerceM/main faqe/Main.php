@@ -101,7 +101,7 @@
           <img src="https://iqq6kf0xmf.gjirafa.net/images/64bcae26-97c7-4d68-8c49-f4a140da57a0/64bcae26-97c7-4d68-8c49-f4a140da57a0.webp?w=400">
           <img src="https://iqq6kf0xmf.gjirafa.net/images/42a6331d-0297-488b-81c7-f1161c658dbc/42a6331d-0297-488b-81c7-f1161c658dbc.webp?w=400">
           <img src="https://assets.brack.ch/images2/5/2/7/235129725/235129725_xxl.jpg">
-          <img src="https://imgsrv.toppreise.ch/img/731351/720/2-da2290">
+          <img src="https://imgsrv.toppreise.ch/img/706937/720-a65f8e">
           <img src="https://iqq6kf0xmf.gjirafa.net/images/669a16b9-7451-4a33-9c90-b266759d00ae/669a16b9-7451-4a33-9c90-b266759d00ae.webp?w=400">
           <img src="https://assets.brack.ch/images2/2/7/6/235128672/235128672_xxl3.jpg">
         
