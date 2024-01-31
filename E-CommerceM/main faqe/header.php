@@ -21,7 +21,7 @@
             <a href="e-commerce.php">Phones</a>
             <a href="Computer.php">Computers&Servers</a>
             <a href="#">Tablets</a>
-            <a href="Main.php">More</a>
+            <a href="Main.php">Home</a>
             <a href="us.php">About<gap>Us</a>
             <a href="ContactUs.php">Contact<gap>Us</a>
             <a href="LogOut.php" style='color:blue;'>Log<gap>Out</a>
