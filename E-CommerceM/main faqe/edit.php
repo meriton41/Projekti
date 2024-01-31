@@ -22,6 +22,8 @@ $paisja = $strep->getPaisjaById($id);
      <input type="text" name="cmimi"  value="<?php echo $paisja['Cmimi']?>"> <br> <br>
      <label>Memoria:</label>
      <input type="text" name="memoria"  value="<?php echo $paisja['Memoria']?>"> <br> <br>
+     <label>Image:</label>
+     <input type="file" name="img"  value="<?php echo $paisja['img']?>"> <br> <br>
      <input type="submit" name="editBtn" value="save"> <br> <br>
     </form>
 </body>
@@ -75,9 +77,10 @@ if(isset($_POST['editBtn'])){
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
     $memoria = $_POST['memoria'];
+    $img = $_POST['img'];
    
 
-    $strep->editPaisja($id,$emri,$ngjyra,$cmimi,$memoria);
+    $strep->editPaisja($id,$emri,$ngjyra,$cmimi,$memoria,$img);
     header("location:Dashboard.php");
     exit();
 }
