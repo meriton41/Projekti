@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .slider-wrap.image-list{  
-     display: grid;
+     display: flex;
      gap: 18px;
      font-size: 0;
      margin-bottom: 30px;
@@ -75,7 +75,7 @@ display* {
   }
   
   .slider-wrapper .image-list {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
     font-size: 0;
