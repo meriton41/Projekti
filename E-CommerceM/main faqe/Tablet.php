@@ -10,9 +10,9 @@ $paisja = $p->getAllPaisjet();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Thalia Online Shop | buy Phones,Laptops,Tablets,Server etc.  | Thalia </title>  
+    <title id="title">Thalia Online Shop | buy Phones,Laptops,Tablets,Server etc. | Thalia </title> 
 
- <link rel="stylesheet" href="e-commerce.css">
+ <link rel="stylesheet" href="Tablet.css">
  <link rel="stylesheet"  href="header.css">
  <link rel="stylesheet" href="footer.css">
  <?php include('header.php')?>
@@ -30,8 +30,8 @@ $paisja = $p->getAllPaisjet();
  require_once "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
 
-$strep = new PaisjetRepository();
-$paisja= $strep->getAllPaisjet();
+$strep = new TabletRepository();
+$tablet= $strep->getAllTabletet();
 
 ?>
 
