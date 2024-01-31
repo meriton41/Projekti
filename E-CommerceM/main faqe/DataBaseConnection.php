@@ -1,6 +1,5 @@
 <?php
 class DatabaseConnection{
-    //keto te dhena i merrni ne baze te databazes suaj
     private $host = "localhost";
     private $username = "root";
     private $db = "store";
@@ -11,10 +10,8 @@ function startConnection(){
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         if(!$conn){
-            //echo "Connection failed "; per testim
             return null;
         }else{
-            //echo "Connection successful!"; per testim
             return $conn;
         }
         
