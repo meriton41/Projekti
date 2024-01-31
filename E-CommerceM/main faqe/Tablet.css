@@ -169,7 +169,11 @@ margin-bottom: 5%;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+p{
+    display: flex;
+    margin-top: 1opx;
+    padding-top: 10px;
+}
 
 /*Responsiv per telefon*/
 @media only screen and (max-width: 768px) {

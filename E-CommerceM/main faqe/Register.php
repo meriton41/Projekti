@@ -8,9 +8,9 @@ if (isset($_POST['submitbtn'])) {
     $cmimi = $_POST['cmimi'];
     $memoria = $_POST['memoria'];
     $img = $_POST['img'];
-   
+    $pershkrimi = $_POST['pershkrimi'];
 
-    $paisja = new Paisjet($emri, $ngjyra, $cmimi,$memoria,$img);
+    $paisja = new Paisjet($emri, $ngjyra, $cmimi,$memoria,$img,$pershkrimi);
 
     $paisjetRepository = new PaisjetRepository();
     $paisjetRepository->insertPaisja($paisja);
@@ -34,8 +34,10 @@ if (isset($_POST['submitbtn'])) {
         <input type="text" name="cmimi" ><br>
         <label>Memoria:</label>  
         <input type="text" name="memoria" ><br>
-        <label>Image:</label>  
+        <label>Foto e produktit:</label>  
         <input type="file" name="img" ><br>
+        <label>Pershkrimi:</label>  
+        <input type="text" name="pershkrimi" ><br>
         <input type="submit" name="submitbtn" value="Submit">
         </form>
     </body>

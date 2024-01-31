@@ -26,11 +26,13 @@
             $cmimi = $paisja->getCmimi();
             $memoria = $paisja->getMemoria();
             $img = $paisja->getImg();
+            $pershkrimi = $paisja->getPershkrimi();
+            
 
-            $sql = "INSERT INTO paisja(Emri, Ngjyra, Cmimi,Memoria,img) VALUES (?,?,?,?,?)";
+            $sql = "INSERT INTO paisja(Emri, Ngjyra, Cmimi,Memoria,img,pershkrimi) VALUES (?,?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img]);
+            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi]);
 
             echo "<script>alert('U shtua me sukses!')</script>";
         }
@@ -48,12 +50,12 @@
 
         //Pjesa tjeter e funksioneve CRUD: update 
         //dergohet parametri ne baze te cilit e identifikojme paisjen (ne kete rast id, por mund te jete edhe ndonje atribut tjeter) dhe parametrat e tjere qe mund t'i ndryshojme (emri, mbiemri, etj...)
-        public function editPaisja($id, $emri, $ngjyra, $cmimi, $memoria,$img){
+        public function editPaisja($id, $emri, $ngjyra, $cmimi, $memoria,$img,$pershkrimi){
             $conn = $this->connection;
-            $sql = "UPDATE paisja SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?, img=? WHERE Id=?";
+            $sql = "UPDATE paisja SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?, img=?, pershkrimi=? WHERE Id=?";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $id]);
+            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $id]);
 
             echo "<script>alert('U ndryshua me sukses!')</script>";
 
