@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
 
@@ -19,7 +20,7 @@ $paisja = $p->getAllPaisjet();
 </head>
 <body>
 <?php
-        session_start();
+        
         if (isset($_SESSION['roli'])) {
          if($_SESSION['roli']=="admin"){
              echo"<button id='b1'>
