@@ -6,7 +6,7 @@
         <div class="search-container">
             <input type="text" class="search-input" placeholder="Title, author, keyword, ISBN">
     
-            <button class="search-button" type="submit" onclick="funksioniSearch()" >
+            <button class="search-button" type="submit" onclick=funksioniSearch() >
             </button>
         </div>
     
@@ -27,3 +27,11 @@
             <a href="LogOut.php" style='color:blue;'>Log<gap>Out</a>
         </ul>
     </nav>
+<script>
+function funksioniSearch() {
+
+    var searchTerm = document.getElementById('searchInput').value; 
+
+    
+    console.log("Search term:", searchTerm);}
+</script>
