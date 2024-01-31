@@ -1,6 +1,6 @@
 <?php
 session_start();
 session_destroy();
-header('Location: Loginform1.php');
+header('Location: Main.php');
 exit();
 ?>
