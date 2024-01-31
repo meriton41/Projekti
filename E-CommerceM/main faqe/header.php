@@ -18,7 +18,6 @@
         </ul>
         
         <ul class="Librat">
-            <a href="Main.php">Home</a>
             <a href="e-commerce.php">Phones</a>
             <a href="Computer.php">Computers&Servers</a>
             <a href="#">Tablets</a>
