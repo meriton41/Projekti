@@ -18,10 +18,14 @@
         </ul>
         
         <ul class="Librat">
+            <a href="Main.php">Home</a>
             <a href="e-commerce.php">Phones</a>
             <a href="Computer.php">Computers&Servers</a>
             <a href="#">Tablets</a>
+<<<<<<< HEAD
             <a href="Main.php">Home</a>
+=======
+>>>>>>> 17e6ff26b820404b89e309f0854ab5e098e82702
             <a href="us.php">About<gap>Us</a>
             <a href="ContactUs.php">Contact<gap>Us</a>
             <a href="LogOut.php" style='color:blue;'>Log<gap>Out</a>
