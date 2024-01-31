@@ -41,6 +41,27 @@ $comment = $cmrep->getAllComments();
                 <?php }?> <!--e mbyllim foreach-->
             </tbody>
         </table>
+        <br><br><br>
+<!-- rion qetu ke me kriju edhe ni tabel per insertimin e laptopatev -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br><br><br>
 <table>
