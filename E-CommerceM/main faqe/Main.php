@@ -109,7 +109,7 @@
       </div>
 
       <br><br><br>
-      <button class="button button1">Show more</button>
+
    <br><br>
     <?php include('footer.php')?>
 </body>
