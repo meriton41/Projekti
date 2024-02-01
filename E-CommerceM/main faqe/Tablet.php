@@ -1,3 +1,12 @@
+<?php
+session_start();
+include "DatabaseConnection.php";
+include_once "TabletetRepository.php";
+
+$p = new TabletetRepository();
+$tablet = $p->getAllTabletet();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +20,22 @@
  <?php include('header.php')?>
 </head>
 <body>
+  <?php
+        
+    if (isset($_SESSION['roli'])) {
+    if($_SESSION['roli']=="admin"){
+       echo"<button id='b1'>
+            <a href='Dashboard.php'>Dashboard</a>
+            </button>";
+         }
+        }
+ require_once "DatabaseConnection.php";
+include_once "TabletetRepository.php";
 
+$strep = new TabletetRepository();
+$tablet= $strep->getAllTabletet();
+
+?>
 
 <div class="d2">
     <div class="Iphone">
@@ -89,7 +113,16 @@
 </div>
    <?php include('footer.php')?>
 <style>
- 
+    #b1{
+    margin-top: 10px;
+    color: black;
+    width: 100px;
+    height: 45px;
+    border:none;
+} 
+#b1 a{
+    color:black;
+}
 </style>
 </body>
 

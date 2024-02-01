@@ -2,12 +2,15 @@
 
 include "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
+include_once "TabletetRepository.php";
 include "function.php"; 
 
 $strep = new PaisjetRepository();
 $paisjet = $strep->getAllPaisjet();
 $cmrep = new Contact();
 $comment = $cmrep->getAllComments();
+$strep = new TabletetRepository();
+$tabletet = $strep->getAllTabletet();
 ?>
 
 <!DOCTYPE html>
@@ -30,17 +33,17 @@ $comment = $cmrep->getAllComments();
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($paisjet as $paisja) { ?> <!--e hapim foreach-->
+                <?php foreach($paisjet as $telefon) { ?> <!--e hapim foreach-->
                     <tr>
-                        <td><?php echo $paisja['Emri'];?></td>
-                        <td><?php echo $paisja['Ngjyra'];?></td>
-                        <td><?php echo $paisja['Cmimi'];?></td>
-                        <td><?php echo $paisja['Memoria'];?></td>
-                        <td><?php echo $paisja['img'];?></td>
-                        <td><?php echo $paisja['pershkrimi'];?></td>
-                        <td><?php echo $paisja['edit'];?></td>
-                        <td><a href='edit.php?Id=<?php echo $paisja['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
-                        <td><a href='delete.php?Id=<?php echo $paisja['Id']?>'>Delete</a></td>
+                        <td><?php echo $telefon['Emri'];?></td>
+                        <td><?php echo $telefon['Ngjyra'];?></td>
+                        <td><?php echo $telefon['Cmimi'];?></td>
+                        <td><?php echo $telefon['Memoria'];?></td>
+                        <td><?php echo $telefon['img'];?></td>
+                        <td><?php echo $telefon['pershkrimi'];?></td>
+                        <td><?php echo $telefon['edit'];?></td>
+                        <td><a href='edit.php?Id=<?php echo $telefon['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
+                        <td><a href='delete.php?Id=<?php echo $telefon['Id']?>'>Delete</a></td>
                     </tr>
                 <?php }?> <!--e mbyllim foreach-->
             </tbody>
@@ -66,6 +69,37 @@ $comment = $cmrep->getAllComments();
 
 
 
+<!-- -------------------------------------------------------------------- -->
+<a href="Register2.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
+<table>
+     <thead>
+       <tr> 
+          <th>Emri</th>
+          <th>Ngjyra</th>
+          <th>Cmimi</th>
+          <th>Memoria</th>
+          <th>Foto</th>
+          <th>Pershkrimi</th>
+          <th>Edit</th>
+       </tr>
+      </thead>
+        <tbody>
+                <?php foreach($tablet as $tablet1) { ?> <!--e hapim foreach-->
+                    <tr>
+                        <td><?php echo $tablet1['Emri'];?></td>
+                        <td><?php echo $tablet1['Ngjyra'];?></td>
+                        <td><?php echo $tablet1['Cmimi'];?></td>
+                        <td><?php echo $tablet1['Memoria'];?></td>
+                        <td><?php echo $tablet1['img'];?></td>
+                        <td><?php echo $tablet1['pershkrimi'];?></td>
+                        <td><?php echo $tablet1['edit'];?></td>
+                        <td><a href='edit2.php?Id=<?php echo $tablet1['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
+                        <td><a href='delete2.php?Id=<?php echo $tablet1['Id']?>'>Delete</a></td>
+                    </tr>
+                <?php }?> <!--e mbyllim foreach-->
+            </tbody>
+        </table>
+        <br><br><br>
 
 <br><br><br>
 <table>

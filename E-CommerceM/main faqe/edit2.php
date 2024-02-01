@@ -1,10 +1,10 @@
 <?php
 session_start();
-include 'PaisjetRepository.php'; 
+include 'TabletetRepository.php'; 
 $id = $_GET['Id'];//e merr id e Paisjes
 $editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
-$strep = new PaisjetRepository();
-$paisja = $strep->getPaisjaById($id);
+$strep = new TabletetRepository();
+$tablet = $strep->getTabletById($id);
 ?>
 
 
@@ -84,7 +84,7 @@ if(isset($_POST['editBtn'])){
     $pershkrimi = $_POST['pershkrimi'];
     $edit = $_POST['edit'];
 
-    $strep->editPaisja($id,$emri,$ngjyra,$cmimi,$memoria,$img,$pershkrimi,$edit);
+    $strep->editTablet($id,$emri,$ngjyra,$cmimi,$memoria,$img,$pershkrimi,$edit);
     header("location:Dashboard.php");
     exit();
 }
