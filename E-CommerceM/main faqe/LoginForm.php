@@ -51,16 +51,20 @@
         <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="password" placeholder="Password" id="fjalekalimi" name="pass" class="input-box" required>
         <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" class="input-box" required>
 
-
+      <br><br>
       <div class="remember-forgot">
-        <label><input type="checkbox">Remember Me</label>
-        <a href="#">Forgot Password</a>
+        <label><input type="checkbox" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Remember Me</label>
+        <a href="#" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Forgot Password</a>
       </div>
-      <button type="submit" class="btn">Register</button>
-      <a  href="LoginForm1.php"><p id="register">LogIn</p></a>
+
+
+      <button type="submit" class="btn">Register</button><br>
+      <a  href="LoginForm1.php"><p id="register">Back to LOG IN</p></a>
+
     </form>
   </div>
-  <br><br><br><br> 
+
+  
 
 
 
@@ -87,7 +91,6 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    justify-content: center;
     top:0px;
     margin-left: 20px;
     position:absolute;
@@ -109,6 +112,9 @@
     line-height: 22px;
   }
   .formular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     margin-top: 150px;
     padding: 30px 40px;
@@ -173,10 +179,11 @@
     font-weight: 600;
   }
 #register{
-  margin-left: 143px;
+  text-align: center;
   text-decoration:none;
-  margin-top: 10px;
+  margin-top: 29px;
   color: black;
+
 }</style>
 
   <script>

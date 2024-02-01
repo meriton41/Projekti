@@ -33,7 +33,7 @@
         public function getAllComputers(){
             $conn = $this->connection;
 
-            $sql = "SELECT * FROM computer";
+            $sql = "SELECT * FROM computers&servers";
             $statement = $conn->query($sql);
 
             $computer = $statement->fetchAll();
