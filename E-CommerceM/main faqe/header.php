@@ -1,3 +1,4 @@
+    <hr>
     <nav>
          
             <img class="thaliaLogo" src="Screenshot 2023-11-16 221803 1.png" alt="Thalia" height="9%" width="14%">
@@ -23,12 +24,20 @@
             <a href="Tablet.php">Tablets</a>
             <a href="Main.php">Home</a>
             <a href="us.php">About<Us</a>
-            <a href="ContactUs.php">ContactUs</a>
+            <a href="ContactUs.php" target="_blank" >ContactUs</a>
             <a href="LogOut.php" style='color:blue;'>LogOut</a>
         </ul>
     </nav>
     <style>
-
+hr {
+  border: none;
+  border-top: 3px solid blue;
+  margin: 0;
+  z-index: 9999; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
     body {
     display: flex;
     box-sizing: border-box;
@@ -37,14 +46,8 @@
     padding-top: 140px; 
      background-color: #fdfdfd; 
 }
-h2{
-    color: #292929;
-    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 22px;
-    text-decoration: none;
-} 
+
+
 nav {
     display: flex;
     width: 100%;
@@ -52,7 +55,7 @@ nav {
     background-color: white;
     box-shadow: 0px 0px 10px gray;
     height: 150px;
-    position: fixed;
+    position:fixed;
     top: 0;
     z-index: 1000; 
 }
@@ -136,9 +139,9 @@ nav {
     position:fixed;
     list-style-type: none;
     color: black;
-    margin-left: -20px;
+    margin-left: 9%;
     font-weight: 500;
-    top: 12%;
+    top: 13%;
     font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
 }
 
