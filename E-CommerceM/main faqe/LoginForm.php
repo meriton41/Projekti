@@ -36,7 +36,7 @@
 
 <body>
     <div class="logo">
-       <img class="thaliaLogo" src="Screenshot 2023-11-16 221803 1.png" alt="Thalia" >
+      <a href="Main.php"> <img src="Screenshot 2023-11-16 221803 1.png"> </a>
     </div>
 
   <div class="formular">
@@ -57,7 +57,7 @@
         <a href="#">Forgot Password</a>
       </div>
       <button type="submit" class="btn">Register</button>
-      <a  href="Main.php"><p id="register">LogIn</p></a>
+      <a  href="LoginForm1.php"><p id="register">LogIn</p></a>
     </form>
   </div>
   <br><br><br><br> 
