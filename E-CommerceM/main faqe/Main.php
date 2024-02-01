@@ -8,7 +8,6 @@
     <script src="config_page1.json" type="application/json" id="config"></script>
 
     <link rel="stylesheet" href="First.css">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <?php include('header.php')?>
 
@@ -16,6 +15,7 @@
 
 
 <body>
+
 
 <div class="slideshow-container">
    
