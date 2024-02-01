@@ -12,6 +12,7 @@
         
         public function insertPC($computer){
             $conn = $this->connection;
+            
             $P_id = $computer->getID();
             $emri = $computer->getEmri();
             $ngjyra =$computer->getNgjyra();
