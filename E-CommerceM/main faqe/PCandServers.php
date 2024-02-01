@@ -1,52 +1,52 @@
 <?php
 class PCasndServers{
 
-    private $Id;
-    private $Emri;
-    private $Ngjyra;
-    private $Cmimi;
-    private $Memoria;
+    private $P_id;
+    private $emri;
+    private $ngjyra;
+    private $cmimi;
+    private $memoria;
     private $img;
     private $pershkrimi;
     private $edit;
     
 
     public function __construct($e, $n, $c, $m, $i, $p, $ed){
-        $this->Emri=$e;
-        $this->Ngjyra=$n;
-        $this->Cmimi=$c;
-        $this->Memoria=$m;
+        $this->emri=$e;
+        $this->ngjyra=$n;
+        $this->cmimi=$c;
+        $this->memoria=$m;
         $this->img=$i;
         $this->pershkrimi=$p;
         $this->edit=$ed;
     }
     public function getEmri(){
-        return $this->Emri;
+        return $this->emri;
     }
     public function setEmri($e){
-        $this->Emri = $e;
+        $this->emri = $e;
     }
 
     public function getNgjyra(){
-        return $this->Ngjyra;
+        return $this->ngjyra;
     }
     public function setNgjyra($n){
-        $this->Ngjyra = $n;
+        $this->ngjyra = $n;
     }
 
     public function getCmimi(){
-        return $this->Cmimi;
+        return $this->cmimi;
     }
     
     public function setCmimi($c){
-        $this->Cmimi = $c;
+        $this->cmimi = $c;
     }
 
     public function getMemoria(){
-        return $this->Memoria;
+        return $this->memoria;
     }
     public function setMemoria($m){
-        $this->Memoria = $m;
+        $this->memoria = $m;
     }
     public function getImg(){
         return $this->img;
@@ -68,7 +68,7 @@ class PCasndServers{
         $this->edit = $ed;
     }
     public function __toString(){
-        return "Emri: ".$this->Emri." dhe ngjyra ".$this->Ngjyra;
+        return "Emri: ".$this->emri." dhe ngjyra ".$this->ngjyra;
     }
 }
 ?>
