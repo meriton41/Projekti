@@ -13,7 +13,7 @@
     
         
         <ul class="Items">
-            <li><a href="LoginForm1.php" class="active">My Account</a></li>
+            <li><a href="LoginForm1.php" target="_blank" class="active">My Account</a></li>
             <li><a href="#">Wish List</a></li>
             <li><a href="#">Shopping cart</a></li>
         </ul>
