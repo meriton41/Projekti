@@ -1,16 +1,20 @@
 <?php
+session_start();
 include_once 'Paisjet.php';
 include_once 'PaisjetRepository.php';
+$addedBy = isset($_SESSION['emri']) ? "Added By: " . $_SESSION['emri'] : "Added By: Unknown";
 
 if (isset($_POST['submitbtn'])) {
-    $emri = $_POST['emri']; 
+   
+    $emri = $_POST['emri']; //meret nga name i formularitHTML
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
     $memoria = $_POST['memoria'];
     $img = $_POST['img'];
     $pershkrimi = $_POST['pershkrimi'];
+    $edit = $_POST['edit'];
 
-    $paisja = new Paisjet($emri, $ngjyra, $cmimi,$memoria,$img,$pershkrimi);
+    $paisja = new Paisjet($emri, $ngjyra, $cmimi,$memoria,$img,$pershkrimi, $edit);
 
     $paisjetRepository = new PaisjetRepository();
     $paisjetRepository->insertPaisja($paisja);
@@ -38,6 +42,7 @@ if (isset($_POST['submitbtn'])) {
         <input type="file" name="img" ><br>
         <label>Pershkrimi:</label>  
         <input type="text" name="pershkrimi" ><br>
+        <input type="hidden" name="edit" value="<?php echo htmlspecialchars($addedBy); ?>"><br>
         <input type="submit" name="submitbtn" value="Submit">
         </form>
     </body>

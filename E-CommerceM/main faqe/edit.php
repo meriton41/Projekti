@@ -1,8 +1,8 @@
-
 <?php
-include_once('PaisjetRepository.php'); 
-$id = isset($_GET['Id']) ? $_GET['Id'] : null;
-
+session_start();
+include 'PaisjetRepository.php'; 
+$id = $_GET['Id'];//e merr id e Paisjes
+$editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
 $strep = new PaisjetRepository();
 $paisja = $strep->getPaisjaById($id);
 ?>
@@ -26,6 +26,7 @@ $paisja = $strep->getPaisjaById($id);
      <input type="file" name="img"  value="<?php echo $paisja['img']?>"> <br> <br>
      <label>Pershkrimi:</label>
      <input type="text" name="pershkrimi"  value="<?php echo $paisja['pershkrimi']?>"> <br> <br>
+     <input type="hidden" name="edit" value="<?php echo htmlspecialchars($editedBy); ?>"> <br> <br>
      <input type="submit" name="editBtn" value="save"> <br> <br>
     </form>
 </body>
