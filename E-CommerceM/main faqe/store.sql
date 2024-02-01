@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2024 at 12:28 AM
+-- Generation Time: Feb 01, 2024 at 01:42 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -61,9 +61,7 @@ CREATE TABLE `form` (
 --
 
 INSERT INTO `form` (`name`, `email`, `pass`, `confirmpassword`, `roli`) VALUES
-('Meriton', 'meriton123@ubt.com', '12345678', '12345678', 'admin'),
-('Inva', 'rion@gmail.com', '12345678', '12345678', ''),
-('rion', 'rion123@ubt.com', '12345678', '12345678', '');
+('Meriton', 'meriton123@ubt.com', '12345678', '12345678', 'admin');
 
 -- --------------------------------------------------------
 
@@ -77,16 +75,41 @@ CREATE TABLE `paisja` (
   `Ngjyra` varchar(255) NOT NULL,
   `Cmimi` varchar(255) NOT NULL,
   `Memoria` varchar(255) NOT NULL,
-  `img` blob NOT NULL
+  `img` blob NOT NULL,
+  `pershkrimi` varchar(255) NOT NULL,
+  `edit` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `paisja`
 --
 
-INSERT INTO `paisja` (`Id`, `Emri`, `Ngjyra`, `Cmimi`, `Memoria`, `img`) VALUES
-(1, 'Samsung Note 10', 'Pink', '880', '1TB', 0x6e6f74653130312d72656d6f766562672d707265766965772e706e67),
-(5, 'Iphone15ProMax', 'rose', '', '', '');
+INSERT INTO `paisja` (`Id`, `Emri`, `Ngjyra`, `Cmimi`, `Memoria`, `img`, `pershkrimi`, `edit`) VALUES
+(1, 'Samsung Note 10', 'Pink', '900', '256gb', 0x6e6f74653130312d72656d6f766562672d707265766965772e706e67, 'Ibardhe', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tablet`
+--
+
+CREATE TABLE `tablet` (
+  `Id` int(11) NOT NULL,
+  `Emri` varchar(255) NOT NULL,
+  `Ngjyra` varchar(255) NOT NULL,
+  `Cmimi` varchar(255) NOT NULL,
+  `Memoria` varchar(255) NOT NULL,
+  `img` blob NOT NULL,
+  `pershkrimi` varchar(255) NOT NULL,
+  `edit` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tablet`
+--
+
+INSERT INTO `tablet` (`Id`, `Emri`, `Ngjyra`, `Cmimi`, `Memoria`, `img`, `pershkrimi`, `edit`) VALUES
+(3, 'tablet', 'zi', '1400', '1tb', 0x322d72656d6f766562672d707265766965772e706e67, 'zi:1tb:1400$', NULL);
 
 --
 -- Indexes for dumped tables
@@ -99,6 +122,12 @@ ALTER TABLE `paisja`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `tablet`
+--
+ALTER TABLE `tablet`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -106,7 +135,13 @@ ALTER TABLE `paisja`
 -- AUTO_INCREMENT for table `paisja`
 --
 ALTER TABLE `paisja`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `tablet`
+--
+ALTER TABLE `tablet`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
