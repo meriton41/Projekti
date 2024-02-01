@@ -27,16 +27,16 @@ $computers = $strep->getAllComputers();
             <tbody>
                 <?php foreach($computers as $computer) { ?> 
                     <tr>
-                        <td><?php echo $computers['ID'];?></td>
-                        <td><?php echo $computer['Emri'];?></td>
-                        <td><?php echo $computer['Ngjyra'];?></td>
-                        <td><?php echo $computer['Cmimi'];?></td>
-                        <td><?php echo $computer['Memoria'];?></td>
-                        <td><?php echo $computer['Img'];?></td>
-                        <td><?php echo $computer['Pershkrimi'];?></td>
-                        <td><?php echo $computer['Edit'];?> </td>
-                        <td><a href='edit1.php?id=<?php echo $computer['Id']?>'>Edit</a></td>
-                        <td><a href='delete1.php?id=<?php echo $computer['Id']?>'>Delete</a></td>
+
+                        <td><?php echo $computer['emri'];?></td>
+                        <td><?php echo $computer['ngjyra'];?></td>
+                        <td><?php echo $computer['cmimi'];?></td>
+                        <td><?php echo $computer['memoria'];?></td>
+                        <td><?php echo $computer['img'];?></td>
+                        <td><?php echo $computer['pershkrimi'];?></td>
+                        <td><?php echo $computer['edit'];?> </td>
+                        <td><a href='edit1.php?id=<?php echo $computer['P_id']?>'>Edit</a></td>
+                        <td><a href='delete1.php?id=<?php echo $computer['P_id']?>'>Delete</a></td>
                     </tr>
                 <?php }?> 
             </tbody>

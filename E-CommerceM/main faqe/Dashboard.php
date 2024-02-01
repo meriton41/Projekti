@@ -71,14 +71,14 @@ $computers = $strep->getAllComputers();
       <tbody>
      <?php foreach($computers as $computer) { ?> 
     <tr>
-        <td><?php echo $computer['Emri'];?></td>
-        <td><?php echo $computer['Ngjyra'];?></td>
-        <td><?php echo $computer['Cmimi'];?></td>
-        <td><?php echo $computer['Memoria'];?></td>
+        <td><?php echo $computer['emri'];?></td>
+        <td><?php echo $computer['ngjyra'];?></td>
+        <td><?php echo $computer['cmimi'];?></td>
+        <td><?php echo $computer['memoria'];?></td>
         <td><?php echo $computer['img'];?></td>
         <td><?php echo $computer['pershkrimi'];?></td>
         <td><?php echo $computer['edit'];?></td>
-        <td><a href='edit1.php?Id=<?php echo $computer['Id']?>'>Edit</a></td> 
+        <td><a target="_blank" href='edit1.php?Id=<?php echo $computer['Id']?>'>Edit</a></td> 
         <td><a href='delete1.php?Id=<?php echo $computer['Id']?>'>Delete</a></td>
          </tr>
    <?php }?> 

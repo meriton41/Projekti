@@ -6,7 +6,6 @@ $addedBy = isset($_SESSION['emri']) ? "Added By: " . $_SESSION['emri'] : "Added 
 
 if (isset($_POST['submitbtn'])) {
    
-    $id = $_POST['if'];
     $emri = $_POST['emri']; 
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
@@ -15,10 +14,10 @@ if (isset($_POST['submitbtn'])) {
     $pershkrimi = $_POST['pershkrimi'];
     $edit = $_POST['edit'];
 
-    $paisja = new Paisjet($id,$emri, $ngjyra, $cmimi,$memoria,$img,$pershkrimi, $edit);
+    $computer = new PCasndServers($emri, $ngjyra, $cmimi,$memoria,$img,$pershkrimi, $edit);
 
     $ComputersRepository = new ComputersRepository();
-    $paisjetRepository->insertPaisja($paisja);
+    $ComputersRepository->insertPC($computer);
     header("location:Dashboard.php");
     exit();
 }

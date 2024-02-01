@@ -1,9 +1,9 @@
 <?php
 include_once 'ComputersRepository.php';
-$id = $_GET['id'];
+$id = $_GET['P_id'];
 
 $strep = new ComputersRepository();
-$strep->deleteComputer($id);
+$strep->deleteComputer($P_id);
 
 header("location:computers.php");
 ?>

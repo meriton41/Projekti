@@ -1,31 +1,32 @@
 
 <?php
-include 'ComputerRepository.php';
-$id = $_GET['id'];
-
+include 'ComputersRepository.php';
+// $id = $_GET['id'];//e merr id e Paisjes
+$editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
 $strep = new ComputersRepository();
-$computer = $strep->getComputerByID($id);
+// $paisja = $strep->getComputerByID($id);
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <body>
-    <h3>Edit Student</h3>
-        <form action="<?php echo $SERVER['PHP_SELF']?>" method="post">
-        <label>Emri:</label>    
-        <input type="text" name="emri"  value="<?php echo $paisja['Emri']?>"> <br> <br> <!-- Pjesa brenda [] eshte emri i sakte i atributit si ne Databaze-->
-        <label>Ngjyra:</label> 
-        <input type="text" name="ngjyra"  value="<?php echo $paisja['Ngjyra']?>"> <br> <br>
-        <label>Cmimi:</label> 
-        <input type="text" name="cmimi"  value="<?php echo $paisja['Cmimi']?>"> <br> <br>
-        <label>Memoria:</label>
-        <input type="text" name="memoria"  value="<?php echo $paisja['Memoria']?>"> <br> <br>
-        <label>Foto e produktit:</label>
-        <input type="file" name="img"  value="<?php echo $paisja['img']?>"> <br> <br>
-        <label>Pershkrimi:</label>
-        <input type="text" name="pershkrimi"  value="<?php echo $paisja['pershkrimi']?>"> <br> <br>
-        <input type="hidden" name="edit" value="<?php echo htmlspecialchars($editedBy); ?>"> <br> <br>
-        <input type="submit" name="editBtn" value="save"> <br> <br>
+<h3>Edit Computer</h3>
+    <form action="<?php echo $_SERVER['PHP_SELF'] . '?Id=' . $id; ?>" method="POST">
+     <label>Emri:</label>    
+     <input type="text" name="emri"  value="<?php echo $computers['emri']?>"> <br> <br> <!-- Pjesa brenda [] eshte emri i sakte i atributit si ne Databaze-->
+     <label>Ngjyra:</label> 
+     <input type="text" name="ngjyra"  value="<?php echo $computers['ngjyra']?>"> <br> <br>
+     <label>Cmimi:</label> 
+     <input type="text" name="cmimi"  value="<?php echo $computers['cmimi']?>"> <br> <br>
+     <label>Memoria:</label>
+     <input type="text" name="memoria"  value="<?php echo $computers['memoria']?>"> <br> <br>
+     <label>Foto e produktit:</label>
+     <input type="file" name="img"  value="<?php echo $computers['img']?>"> <br> <br>
+     <label>Pershkrimi:</label>
+     <input type="text" name="pershkrimi"  value="<?php echo $computers['pershkrimi']?>"> <br> <br>
+     <input type="hidden" name="edit" value="<?php echo htmlspecialchars($editedBy); ?>"> <br> <br>
+     <input type="submit" name="editBtn" value="save"> <br> <br>
     </form>
 </body>
 </html>
@@ -75,7 +76,6 @@ input[type="submit"]:hover {
 <?php 
 
 if(isset($_POST['editBtn'])){
-    $id = $id; 
     $emri = $_POST['emri']; 
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
@@ -84,7 +84,7 @@ if(isset($_POST['editBtn'])){
     $pershkrimi = $_POST['pershkrimi'];
     $edit = $_POST['edit'];
 
-    $strep->editComputer($id,$emri,$ngjyra,$cmimi,$memoria,$img,$pershkrimi,$edit);
+    $strep->editComputer($emri,$ngjyra,$cmimi,$memoria,$img,$pershkrimi,$edit);
     header("location:Dashboard.php");
     exit();
 }
