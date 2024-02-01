@@ -3,6 +3,7 @@
 include "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
 include_once "TabletetRepository.php";
+include_once "ComputersRepository.php";
 include "function.php"; 
 
 $strep = new PaisjetRepository();
@@ -11,6 +12,8 @@ $cmrep = new Contact();
 $comment = $cmrep->getAllComments();
 $strep = new TabletetRepository();
 $tabletet = $strep->getAllTabletet();
+$strep = new ComputersRepository();
+$computers = $strep->getAllComputers();
 ?>
 
 <!DOCTYPE html>
@@ -50,23 +53,37 @@ $tabletet = $strep->getAllTabletet();
   </tbody>
 </table>
  <br><br>
-<!-- rion qetu ke me kriju edhe ni tabel per insertimin e laptopatev -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ <a href="Register1.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
+         <h2 style="text-align: center;" >Regjistri i Computers&Servers</h2>
+      <table>
+    <thead>
+   <tr>
+   <th>Emri</th>
+   <th>Ngjyra</th>
+   <th>Cmimi</th>
+   <th>Memoria</th>
+   <th>Foto</th>
+   <th>Pershkrimi</th>
+   <th>Edit</th>
+   </tr>
+   </thead>
+      <tbody>
+     <?php foreach($computers as $computer) { ?> 
+    <tr>
+        <td><?php echo $computer['Emri'];?></td>
+        <td><?php echo $computer['Ngjyra'];?></td>
+        <td><?php echo $computer['Cmimi'];?></td>
+        <td><?php echo $computer['Memoria'];?></td>
+        <td><?php echo $computer['img'];?></td>
+        <td><?php echo $computer['pershkrimi'];?></td>
+        <td><?php echo $computer['edit'];?></td>
+        <td><a href='edit1.php?Id=<?php echo $computer['Id']?>'>Edit</a></td> 
+        <td><a href='delete1.php?Id=<?php echo $computer['Id']?>'>Delete</a></td>
+         </tr>
+   <?php }?> 
+  </tbody>
+</table>
 
 
 
