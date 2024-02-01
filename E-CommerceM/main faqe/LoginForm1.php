@@ -62,7 +62,7 @@ session_start();
         <a href="#">Forgot Password</a>
       </div>
       <button type="submit" class="btn">LogIn</button>
-      <a  href="LoginForm.php"><p id="register"style="display:flex; margin-left:120px; text-align:center; justify=content:center; align-items:center;">Create Account</p></a>
+      <a  href="LoginForm.php" target="_blank"><p id="register"style="display:flex; margin-left:120px; text-align:center; justify=content:center; align-items:center;">Create Account</p></a>
     </form>
   </div>
 

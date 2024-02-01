@@ -84,7 +84,7 @@ $tabletet = $strep->getAllTabletet();
        </tr>
       </thead>
         <tbody>
-                <?php foreach($tablet as $tablet1) { ?> <!--e hapim foreach-->
+                <?php foreach($tabletet as $tablet1) { ?> <!--e hapim foreach-->
                     <tr>
                         <td><?php echo $tablet1['Emri'];?></td>
                         <td><?php echo $tablet1['Ngjyra'];?></td>
