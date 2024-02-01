@@ -38,7 +38,7 @@
             $computer = $statement->fetchAll();
             return $computer;
         }
-        public function editPaisja($P_id, $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit){
+        public function editComputer($P_id, $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit){
             $conn = $this->connection;
             $sql = "UPDATE computer SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?,img=?,pershkrimi=?,edit=?, WHERE Id=?";
 
