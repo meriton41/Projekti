@@ -20,35 +20,36 @@ $tabletet = $strep->getAllTabletet();
     <?php include('header.php')?>
     <body>
         <a href="Register.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
-        <table>
-            <thead>
-            <tr>
-                <th>Emri</th>
-                <th>Ngjyra</th>
-                <th>Cmimi</th>
-                <th>Memoria</th>
-                <th>Foto</th>
-                <th>Pershkrimi</th>
-                <th>Edit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($paisjet as $telefon) { ?> <!--e hapim foreach-->
-                    <tr>
-                        <td><?php echo $telefon['Emri'];?></td>
-                        <td><?php echo $telefon['Ngjyra'];?></td>
-                        <td><?php echo $telefon['Cmimi'];?></td>
-                        <td><?php echo $telefon['Memoria'];?></td>
-                        <td><?php echo $telefon['img'];?></td>
-                        <td><?php echo $telefon['pershkrimi'];?></td>
-                        <td><?php echo $telefon['edit'];?></td>
-                        <td><a href='edit.php?Id=<?php echo $telefon['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
-                        <td><a href='delete.php?Id=<?php echo $telefon['Id']?>'>Delete</a></td>
-                    </tr>
-                <?php }?> <!--e mbyllim foreach-->
-            </tbody>
-        </table>
-        <br><br><br>
+         <h2 >Regjistrimi i Telefonave</h2>
+      <table>
+    <thead>
+   <tr>
+   <th>Emri</th>
+   <th>Ngjyra</th>
+   <th>Cmimi</th>
+   <th>Memoria</th>
+   <th>Foto</th>
+   <th>Pershkrimi</th>
+   <th>Edit</th>
+   </tr>
+   </thead>
+      <tbody>
+     <?php foreach($paisjet as $telefon) { ?> <!--e hapim foreach-->
+    <tr>
+        <td><?php echo $telefon['Emri'];?></td>
+        <td><?php echo $telefon['Ngjyra'];?></td>
+        <td><?php echo $telefon['Cmimi'];?></td>
+        <td><?php echo $telefon['Memoria'];?></td>
+        <td><?php echo $telefon['img'];?></td>
+        <td><?php echo $telefon['pershkrimi'];?></td>
+        <td><?php echo $telefon['edit'];?></td>
+        <td><a href='edit.php?Id=<?php echo $telefon['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
+        <td><a href='delete.php?Id=<?php echo $telefon['Id']?>'>Delete</a></td>
+         </tr>
+   <?php }?> <!--e mbyllim foreach-->
+  </tbody>
+</table>
+ <br><br><br>
 <!-- rion qetu ke me kriju edhe ni tabel per insertimin e laptopatev -->
 
 
@@ -71,6 +72,7 @@ $tabletet = $strep->getAllTabletet();
 
 <!-- -------------------------------------------------------------------- -->
 <a href="Register2.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
+<h2>Regjistrimi i Tabletave</h2>
 <table>
      <thead>
        <tr> 
