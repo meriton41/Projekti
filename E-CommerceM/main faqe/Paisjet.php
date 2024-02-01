@@ -7,15 +7,17 @@ class Paisjet{
     private $Memoria;
     private $img;
     private $pershkrimi;
+    private $edit;
     
 
-    public function __construct($e, $n, $c, $m,$i,$p){
+    public function __construct($e, $n, $c, $m, $i, $p, $ed){
         $this->Emri=$e;
         $this->Ngjyra=$n;
         $this->Cmimi=$c;
         $this->Memoria=$m;
         $this->img=$i;
         $this->pershkrimi=$p;
+        $this->edit=$ed;
     }
     
     public function getEmri(){
@@ -58,6 +60,12 @@ class Paisjet{
     }
     public function setPershkrimi($p){
         $this->Pershkrimi = $p;
+    }
+    public function getEdit(){
+        return $this->Edit;
+    }
+    public function setEdit($ed){
+        $this->Edit = $ed;
     }
     public function __toString(){
         return "Emri: ".$this->Emri." dhe ngjyra ".$this->Ngjyra;

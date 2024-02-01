@@ -20,17 +20,17 @@
     
 <div class="a0">
     <div class="a1">
-        <a href=""><img src="iphone15-removebg-preview.png" alt="Iphone15" width="200px">
+        <a href=""><img src="2-removebg-preview.png" alt="Iphone15" width="200px">
         <a href="">Iphone 15 Pro Max</a>
         <p class="meriton2">Bardhe;256GB;1400$</p>
         </a></div>
     <div class="a2"> 
-        <a href="#"><img src="Iphonee14-removebg-preview.png" alt="Iphone14" width="200px">
+        <a href="#"><img src="AppleIpad2024-removebg-preview (1).png" alt="Iphone14" width="200px">
         <a href="#"> Iphone 14 Pro Max </a>
         <p class="meriton2">Bardhe;256GB;1400$</p>
        </a></div>
     <div class="a3">
-         <a href="#"><img src="Iphone13-removebg-preview.png" alt="Iphone13" width="200px" >
+         <a href="#"><img src="APPLEIPADPRO2021-removebg-preview.png" alt="Iphone13" width="200px" >
         <a href="#"> Iphone 13 Pro Max </a>
         <p class="meriton2">Bardhe;256GB;1400$</p>
         </a></div>

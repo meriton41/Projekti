@@ -24,8 +24,9 @@ $comment = $cmrep->getAllComments();
                 <th>Ngjyra</th>
                 <th>Cmimi</th>
                 <th>Memoria</th>
-                <th>img</th>
-                <th>pershkrimi</th>
+                <th>Foto</th>
+                <th>Pershkrimi</th>
+                <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,6 +38,7 @@ $comment = $cmrep->getAllComments();
                         <td><?php echo $paisja['Memoria'];?></td>
                         <td><?php echo $paisja['img'];?></td>
                         <td><?php echo $paisja['pershkrimi'];?></td>
+                        <td><?php echo $paisja['edit'];?></td>
                         <td><a href='edit.php?Id=<?php echo $paisja['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
                         <td><a href='delete.php?Id=<?php echo $paisja['Id']?>'>Delete</a></td>
                     </tr>
