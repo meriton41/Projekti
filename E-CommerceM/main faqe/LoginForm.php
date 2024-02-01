@@ -29,15 +29,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
-  <link rel="stylesheet" href="LoginForm.css">
+
 
 </head>
 
 
 <body>
+    <div class="logo">
+       <img class="thaliaLogo" src="Screenshot 2023-11-16 221803 1.png" alt="Thalia" >
+    </div>
+
   <div class="formular">
     <form onsubmit="validimi()" method="POST">
-      <h1>Miresevini ne Thalia</h1>
+
+
 
         <label>Username:</label>
         <input type="text" placeholder="Username" id="emri" name="name" class="input-box" required>
@@ -58,7 +63,8 @@
     </form>
   </div>
 
-  <style>*{
+  <style>
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,22 +77,31 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+
+
+    
   }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    justify-content: center;
+    top:0px;
+    margin-left: 20px;
+    position:absolute;
+    padding: 5px;
+    background-color: white;
+    width:100%
+  }
+
   .formular{
     width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(50px);
-    color: #fff;
-    border-radius: 12px;
+    margin-top: 89px;
     padding: 30px 40px;
   }
-  .formular h1{
-    font-size: 36px;
-    text-align: center;
-    color: black;
-    margin-bottom: 10px;
-  }
+
   .formular .input-box{
     position: relative;
     width: 100%;
