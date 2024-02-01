@@ -20,7 +20,7 @@ $tabletet = $strep->getAllTabletet();
     <?php include('header.php')?>
     <body>
         <a href="Register.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
-         <h2 >Regjistrimi i Telefonave</h2>
+         <h2 style="text-align: center;" >Regjistri i Telefonave</h2>
       <table>
     <thead>
    <tr>
@@ -49,7 +49,7 @@ $tabletet = $strep->getAllTabletet();
    <?php }?> <!--e mbyllim foreach-->
   </tbody>
 </table>
- <br><br><br>
+ <br><br>
 <!-- rion qetu ke me kriju edhe ni tabel per insertimin e laptopatev -->
 
 
@@ -72,7 +72,7 @@ $tabletet = $strep->getAllTabletet();
 
 <!-- -------------------------------------------------------------------- -->
 <a href="Register2.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
-<h2>Regjistrimi i Tabletave</h2>
+<h2 style="text-align: center;">Regjistri i Tabletave</h2>
 <table>
      <thead>
        <tr> 
@@ -101,9 +101,8 @@ $tabletet = $strep->getAllTabletet();
                 <?php }?> <!--e mbyllim foreach-->
             </tbody>
         </table>
-        <br><br><br>
-
-<br><br><br>
+        <br><br>
+<h2 style="text-align: center;">Regjistri i Paqartesive</h2>
 <table>
             <thead>
             <tr>
