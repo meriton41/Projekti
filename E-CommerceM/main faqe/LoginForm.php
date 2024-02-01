@@ -43,15 +43,13 @@
     <form onsubmit="validimi()" method="POST">
 
 
-
-        <label>Username:</label>
-        <input type="text" placeholder="Username" id="emri" name="name" class="input-box" required>
-        <label>E-mail:</label>
-        <input type="text" placeholder="E-mail" id="email" name="email" class="input-box" required>
-        <label>Password:</label>
-        <input type="password" placeholder="Password" id="fjalekalimi" name="pass" class="input-box" required>
-        <label>Confirm password:</label>
-        <input type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" class="input-box" required>
+        <h2>Mirë se vini në Thalia</h2>
+        <h4>Regjistrohuni lehtësisht këtu për një llogari klienti në Thalia.de</h4><br>
+  
+        <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="text" placeholder="Username" id="emri" name="name" class="input-box" required>
+        <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="text" placeholder="E-mail" id="email" name="email" class="input-box" required>
+        <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="password" placeholder="Password" id="fjalekalimi" name="pass" class="input-box" required>
+        <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" class="input-box" required>
 
 
       <div class="remember-forgot">
@@ -62,6 +60,9 @@
       <a  href="Main.php"><p id="register">LogIn</p></a>
     </form>
   </div>
+  <br><br><br><br> 
+
+
 
   <style>
   *{
@@ -77,10 +78,9 @@
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-
-
-    
+    background-color: gainsboro;
   }
+
 
   .logo{
     display: flex;
@@ -95,18 +95,30 @@
     background-color: white;
     width:100%
   }
-
+  h2{
+    color: #292929;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+    font-size: 20px;
+    font-weight: 900;
+  }
+  h4{
+    color: #292929;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
   .formular{
-    width: 420px;
-    margin-top: 89px;
+    width: 500px;
+    margin-top: 150px;
     padding: 30px 40px;
+    background-color: white;
   }
 
   .formular .input-box{
     position: relative;
     width: 100%;
     height: 50px;
-    
     margin: 20px 0;
   }
   .input-box input{
@@ -118,7 +130,6 @@
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
     padding: 20px 45px 20px 20px;
   }
   .formular label{
@@ -133,6 +144,7 @@
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
+    
   }
   .remember-forgot label input{
     accent-color: #fff;
