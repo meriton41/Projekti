@@ -50,9 +50,9 @@
 
         //Pjesa tjeter e funksioneve CRUD: update 
         //dergohet parametri ne baze te cilit e identifikojme paisjen (ne kete rast id, por mund te jete edhe ndonje atribut tjeter) dhe parametrat e tjere qe mund t'i ndryshojme (emri, mbiemri, etj...)
-        public function editPaisja($id, $emri, $ngjyra, $cmimi, $memoria,$img,$pershkrimi){
+        public function editPaisja($id, $emri, $ngjyra, $cmimi, $memoria,$img,$pershkrimi,$edit){
             $conn = $this->connection;
-            $sql = "UPDATE paisja SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?, img=?, pershkrimi=?, edit=? WHERE Id=?";
+            $sql = "UPDATE paisja SET Emri=?, Ngjyra=?, Cmimi=?, Memoria=?, img=?, pershkrimi=?, edit=? WHERE Id=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit, $id]);

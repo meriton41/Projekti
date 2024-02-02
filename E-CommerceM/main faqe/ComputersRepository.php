@@ -21,7 +21,7 @@
             $pershkrimi = $computer->getPershkrimi();
             $edit = $computer->getEdit();
 
-            $sql = "INSERT INTO computer(Emri, Ngjyra, Cmimi,Memoria,img,pershkrimi,edit) VALUES (?,?,?,?,?,?,?)";
+            $sql = "INSERT INTO computer(emri, ngjyra, cmimi,memoria,img,pershkrimi,edit) VALUES (?,?,?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit]);
@@ -40,7 +40,7 @@
         }
         public function editComputer($id, $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit){
             $conn = $this->connection;
-            $sql = "UPDATE computer SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?,img=?,pershkrimi=?,edit=?, WHERE P_id=?";
+            $sql = "UPDATE computer SET emri=?, ngjyra=?, cmimi=?, memoria=?, img=?, pershkrimi=?, edit=? WHERE P_id=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([ $id,$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit]);
