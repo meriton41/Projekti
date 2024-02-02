@@ -11,21 +11,21 @@ $tablet = $strep->getTabletById($id);
 <!DOCTYPE html>
 <html>
 <body>
-    <h3>Edit Paisja</h3>
+    <h3>Edit Tablet</h3>
     <form action="<?php echo $_SERVER['PHP_SELF'] . '?Id=' . $id; ?>" method="POST">
      <!-- nese nuk duam t'i ndryshojme te gjitha te dhenat, e perdorim kete pjesen tek value qe te na shfaqen vlerat aktuale, ashtu qe atributet qe nuk duam t'i ndryshojme mbesin te njejta pa pasur nevoje t'i shkruajme prape-->  
      <label>Emri:</label>    
-     <input type="text" name="emri"  value="<?php echo $paisja['Emri']?>"> <br> <br> <!-- Pjesa brenda [] eshte emri i sakte i atributit si ne Databaze-->
+     <input type="text" name="emri"  value="<?php echo $tablet['Emri']?>"> <br> <br> <!-- Pjesa brenda [] eshte emri i sakte i atributit si ne Databaze-->
      <label>Ngjyra:</label> 
-     <input type="text" name="ngjyra"  value="<?php echo $paisja['Ngjyra']?>"> <br> <br>
+     <input type="text" name="ngjyra"  value="<?php echo $tablet['Ngjyra']?>"> <br> <br>
      <label>Cmimi:</label> 
-     <input type="text" name="cmimi"  value="<?php echo $paisja['Cmimi']?>"> <br> <br>
+     <input type="text" name="cmimi"  value="<?php echo $tablet['Cmimi']?>"> <br> <br>
      <label>Memoria:</label>
-     <input type="text" name="memoria"  value="<?php echo $paisja['Memoria']?>"> <br> <br>
+     <input type="text" name="memoria"  value="<?php echo $tablet['Memoria']?>"> <br> <br>
      <label>Foto e produktit:</label>
-     <input type="file" name="img"  value="<?php echo $paisja['img']?>"> <br> <br>
+     <input type="file" name="img"  value="<?php echo $tablet['img']?>"> <br> <br>
      <label>Pershkrimi:</label>
-     <input type="text" name="pershkrimi"  value="<?php echo $paisja['pershkrimi']?>"> <br> <br>
+     <input type="text" name="pershkrimi"  value="<?php echo $tablet['pershkrimi']?>"> <br> <br>
      <input type="hidden" name="edit" value="<?php echo htmlspecialchars($editedBy); ?>"> <br> <br>
      <input type="submit" name="editBtn" value="save"> <br> <br>
     </form>
@@ -75,7 +75,7 @@ input[type="submit"]:hover {
 <?php 
 
 if(isset($_POST['editBtn'])){
-    $id = $id; //merret nga paisja me siper
+    $id = $id; //merret nga tablet me siper
     $emri = $_POST['emri']; //merret nga formulari
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
