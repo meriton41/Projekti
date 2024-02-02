@@ -1,10 +1,11 @@
 
 <?php
 include 'ComputersRepository.php';
-// $id = $_GET['id'];//e merr id e Paisjes
+include 'computers.php'
+$id = $_GET['id'];//e merr id e Paisjes
 $editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
 $strep = new ComputersRepository();
-// $paisja = $strep->getComputerByID($id);
+$paisja = $strep->getComputerByID($id);
 
 ?>
 
@@ -14,7 +15,7 @@ $strep = new ComputersRepository();
 <h3>Edit Computer</h3>
     <form action="<?php echo $_SERVER['PHP_SELF'] . '?Id=' . $id; ?>" method="POST">
      <label>Emri:</label>    
-     <input type="text" name="emri"  value="<?php echo $computers['emri']?>"> <br> <br> <!-- Pjesa brenda [] eshte emri i sakte i atributit si ne Databaze-->
+     <input type="text" name="emri"  value="<?php echo $computers['emri']?>"> <br> <br> 
      <label>Ngjyra:</label> 
      <input type="text" name="ngjyra"  value="<?php echo $computers['ngjyra']?>"> <br> <br>
      <label>Cmimi:</label> 
@@ -76,6 +77,7 @@ input[type="submit"]:hover {
 <?php 
 
 if(isset($_POST['editBtn'])){
+    $id = $computer['P_id'];
     $emri = $_POST['emri']; 
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
@@ -84,7 +86,7 @@ if(isset($_POST['editBtn'])){
     $pershkrimi = $_POST['pershkrimi'];
     $edit = $_POST['edit'];
 
-    $strep->editComputer($emri,$ngjyra,$cmimi,$memoria,$img,$pershkrimi,$edit);
+    $strep->editComputer($id,$emri,$ngjyra,$cmimi,$memoria,$img,$pershkrimi,$edit);
     header("location:Dashboard.php");
     exit();
 }

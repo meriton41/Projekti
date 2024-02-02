@@ -38,33 +38,33 @@
             $computer = $statement->fetchAll();
             return $computer;
         }
-        public function editComputer( $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit){
+        public function editComputer($id, $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit){
             $conn = $this->connection;
             $sql = "UPDATE computer SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?,img=?,pershkrimi=?,edit=?, WHERE Id=?";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([ $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit]);
+            $statement->execute([ $id,$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit]);
 
             echo "<script>alert('Paisja u ndryshua me sukses!')</script>";
 
         }
 
-        function deleteComputer($P_id){
+        function deleteComputer($id){
             $conn = $this->connection;
 
             $sql = "DELETE FROM computer WHERE Id=?";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$P_id]);
+            $statement->execute([$id]);
         }
 
-        function getComputerByID($P_id){
+        function getComputerByID($id){
             $conn = $this->connection;
 
             $sql = "SELECT * FROM computers&servers WHERE Id=?";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$P_id]);
+            $statement->execute([$id]);
             $computer=$statement->fetch();
 
             return $computer;

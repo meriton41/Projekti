@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once 'PCandServers.php';
 include_once 'ComputersRepository.php';
 

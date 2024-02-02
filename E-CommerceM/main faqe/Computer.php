@@ -1,3 +1,12 @@
+<?php
+session_start();
+include "DatabaseConnection.php";
+include_once "ComputersRepository.php";
+
+$p = new ComputersRepository();
+$computer = $p->getAllComputers();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +21,43 @@
 
 </head>
 <body>
+<?php
+
+        if (isset($_SESSION['roli'])) {
+        if($_SESSION['roli']=="admin"){
+           echo"
+                <button id='b1'>
+                <a class = 'Dash' href='Dashboard.php'>Dashboard</a>
+                </button>
+                <style>
+                #b1{
+                  margin-top:12px;
+                  background-color:yellow;
+                  height:40px;
+                }
+                .Dash{
+                  font-style: italic;
+                  color:red;
+                  text-decoration:none;
+                  font-weight:bold;
+
+                  
+                }
+                
+                
+                </style>";
+             }
+            }
+     require_once "DatabaseConnection.php";
+    include_once "TabletetRepository.php";
     
+    $strep = new TabletetRepository();
+    $tablet= $strep->getAllTabletet();
+    
+    ?>    
+
+
+
     <br><br><br>
     <div class="row"> 
         <div class="column">
