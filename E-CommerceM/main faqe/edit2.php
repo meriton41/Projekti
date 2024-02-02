@@ -1,8 +1,8 @@
 <?php
 session_start();
 include 'TabletetRepository.php'; 
-$id = $_GET['Id'];//e merr id e Paisjes
-$editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
+$id = $_GET['Id'];//e merr id e Computerit
+$editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown"; 
 $strep = new TabletetRepository();
 $tablet = $strep->getTabletById($id);
 ?>

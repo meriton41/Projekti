@@ -2,7 +2,7 @@
 session_start();
 include_once 'Tabletet.php';
 include_once 'TabletetRepository.php';
-$addedBy = isset($_SESSION['emri']) ? "Added By: " . $_SESSION['emri'] : "Added By: Unknown";
+$addedBy = isset($_SESSION['name']) ? "Added By: " . $_SESSION['name'] : "Added By: Unknown";
 
 if (isset($_POST['submitbtn'])) {
    
