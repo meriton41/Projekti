@@ -24,8 +24,25 @@ $paisja = $p->getAllPaisjet();
         if (isset($_SESSION['roli'])) {
          if($_SESSION['roli']=="admin"){
              echo"<button id='b1'>
-                     <a href='Dashboard.php'>Dashboard</a>
-                 </button>";
+             <a class = 'Dash' href='Dashboard.php'>Dashboard</a>
+             </button>
+             <style>
+             #b1{
+               margin-top:12px;
+               background-color:yellow;
+               height:40px;
+               position:relative;
+             }
+              .Dash{
+                color:red;
+               font-style: italic;
+               text-decoration:none;
+               font-weight:bold;
+
+             }
+             
+             
+             </style>";
          }
         }
  require_once "DatabaseConnection.php";
@@ -111,18 +128,6 @@ $paisja= $strep->getAllPaisjet();
 </div>
 </div>
    <?php include('footer.php')?>
-<style>
-    #b1{
-    margin-top: 10px;
-    color: black;
-    width: 100px;
-    height: 45px;
-    border:none;
-} 
-#b1 a{
-    color:black;
-}
-</style>
 </body>
 
 
