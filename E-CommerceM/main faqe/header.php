@@ -5,12 +5,11 @@
         
     
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="Title, author, keyword, ISBN">
+            <input type="text"  class="search-input" placeholder="Title, author, keyword, ISBN">
     
-            <button class="search-button" type="submit" onclick=funksioniSearch() >
+            <button class="search-button" type="submit"  >
             </button>
         </div>
-    
 
         <ul class="Items">
             <li><a href="LoginForm1.php" target="_blank" class="active">My Account</a></li>
@@ -201,3 +200,4 @@ nav {
     }
 }
 </style>
+
