@@ -68,12 +68,12 @@ $tablet= $strep->getAllTabletet();
         <p class="meriton2">Bardhe;256GB;1400$</p>
         </a></div>
     <div class="a2"> 
-        <a href="#"><img src="AppleIpad2024-removebg-preview (1).png" alt="Iphone14" width="200px">
+        <a href="#"><img src="https://imgsrv.toppreise.ch/img/684619/720-2a050d" alt="Iphone14" width="200px">
         <a href="#"> Iphone 14 Pro Max </a>
         <p class="meriton2">Bardhe;256GB;1400$</p>
        </a></div>
     <div class="a3">
-         <a href="#"><img src="APPLEIPADPRO2021-removebg-preview.png" alt="Iphone13" width="200px" >
+         <a href="#"><img src="https://imgsrv.toppreise.ch/img/706937/720-a65f8e" alt="Iphone13" width="200px" >
         <a href="#"> Iphone 13 Pro Max </a>
         <p class="meriton2">Bardhe;256GB;1400$</p>
         </a></div>

@@ -37,7 +37,7 @@ $computer = $p->getAllComputers();
                 }
                 .Dash{
                   font-style: italic;
-                  color:red;
+                  color:blue;
                   text-decoration:none;
                   font-weight:bold;
 
