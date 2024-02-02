@@ -11,12 +11,13 @@
             </button>
         </div>
     
-        
+
         <ul class="Items">
             <li><a href="LoginForm1.php" target="_blank" class="active">My Account</a></li>
             <li><a href="#">Wish List</a></li>
             <li><a href="#">Shopping cart</a></li>
         </ul>
+
         
         <ul class="Librat">
             <a href="e-commerce.php">Phones</a>
@@ -72,6 +73,7 @@ nav {
     height: 50%;
     justify-content: center;
     margin-left: 29%;
+    margin-top:25px;
 }
 
 .search-input{
@@ -104,17 +106,17 @@ nav {
 }
 
 .Items{
+    margin: 0;
+    padding: 0px; 
+    margin-left:900px;
+    margin-top: 30px;
     font-weight: 400;
     line-height: 16px;
     list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    margin-left:20px;
-    margin-top: 20px;
     overflow: hidden;
     background-color: #333;
     font-family:Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif" ;
-    position: relative;
+    position: fixed;
 }
 .Items li{
     float: left;
