@@ -2,7 +2,7 @@
 <?php
 session_start();
 include 'ComputersRepository.php';
-$id = $_GET['P_id'];//e merr id e Paisjes
+$id = $_GET['P_id'];
 $editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
 $strep = new ComputersRepository();
 $computers = $strep->getComputerByID($id);
@@ -13,7 +13,7 @@ $computers = $strep->getComputerByID($id);
 <html>
 <body>
 <h3>Edit Computer</h3>
-    <form action="<?php echo $_SERVER['PHP_SELF'] . '?Id=' . $id; ?>" method="POST">
+    <form action="<?php echo $_SERVER['PHP_SELF'] . '?P_id=' . $id; ?>" method="POST">
      <label>Emri:</label>    
      <input type="text" name="emri"  value="<?php echo $computers['emri']?>"> <br> <br> 
      <label>Ngjyra:</label> 
@@ -77,7 +77,7 @@ input[type="submit"]:hover {
 <?php 
 
 if(isset($_POST['editBtn'])){
-    $id = $computer['P_id'];
+    $id = $computers['P_id'];
     $emri = $_POST['emri']; 
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];

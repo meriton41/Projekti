@@ -5,5 +5,5 @@ $id = $_GET['P_id'];
 $strep = new ComputersRepository();
 $strep->deleteComputer($id);
 
-header("location:computers.php");
+header("location:Dashboard.php");
 ?>

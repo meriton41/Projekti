@@ -10,10 +10,6 @@
             $this->connection = $conn->startConnection();
         }
 
-        
-        
-
-
         public function insertTablet($tablet){
             $conn = $this->connection;
 
