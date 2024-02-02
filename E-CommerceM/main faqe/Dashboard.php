@@ -85,9 +85,7 @@ $computers = $strep->getAllComputers();
   </tbody>
 </table>
 
-
-
-<!-- -------------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------------ -->
 <a href="Register2.php" style="margin-top:40px; margin-left:40px;color:black;">Register</a>
 <h2 style="text-align: center;">Regjistri i Tabletave</h2>
 <table>
