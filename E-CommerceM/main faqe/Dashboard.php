@@ -78,8 +78,8 @@ $computers = $strep->getAllComputers();
         <td><?php echo $computer['img'];?></td>
         <td><?php echo $computer['pershkrimi'];?></td>
         <td><?php echo $computer['edit'];?></td>
-        <td><a target="_blank" href='edit1.php?Id=<?php echo $computer['Id']?>'>Edit</a></td> 
-        <td><a href='delete1.php?Id=<?php echo $computer['Id']?>'>Delete</a></td>
+        <td><a target="_blank" href='edit1.php?P_id=<?php echo $computer['P_id']?>'>Edit</a></td> 
+        <td><a href='delete1.php?P_id=<?php echo $computer['P_id']?>'>Delete</a></td>
          </tr>
    <?php }?> 
   </tbody>

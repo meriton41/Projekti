@@ -40,7 +40,7 @@
         }
         public function editComputer($id, $emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit){
             $conn = $this->connection;
-            $sql = "UPDATE computer SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?,img=?,pershkrimi=?,edit=?, WHERE Id=?";
+            $sql = "UPDATE computer SET Emri=?,Ngjyra=?, Cmimi=?, Memoria=?,img=?,pershkrimi=?,edit=?, WHERE P_id=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([ $id,$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit]);
@@ -52,7 +52,7 @@
         function deleteComputer($id){
             $conn = $this->connection;
 
-            $sql = "DELETE FROM computer WHERE Id=?";
+            $sql = "DELETE FROM computer WHERE P_id=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$id]);
@@ -61,7 +61,7 @@
         function getComputerByID($id){
             $conn = $this->connection;
 
-            $sql = "SELECT * FROM computers&servers WHERE Id=?";
+            $sql = "SELECT * FROM computer WHERE P_id=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$id]);

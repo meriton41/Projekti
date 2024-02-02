@@ -1,11 +1,11 @@
 
 <?php
+session_start();
 include 'ComputersRepository.php';
-include 'computers.php'
-$id = $_GET['id'];//e merr id e Paisjes
+$id = $_GET['P_id'];//e merr id e Paisjes
 $editedBy = isset($_SESSION['emri']) ? "Edited By: " . $_SESSION['emri'] : "Edited By: Unknown"; 
 $strep = new ComputersRepository();
-$paisja = $strep->getComputerByID($id);
+$computers = $strep->getComputerByID($id);
 
 ?>
 
