@@ -59,13 +59,13 @@ class Tabletet{
         return $this->pershkrimi;
     }
     public function setPershkrimi($p){
-        $this->Pershkrimi = $p;
+        $this->pershkrimi = $p;
     }
     public function getEdit(){
-        return $this->Edit;
+        return $this->edit;
     }
     public function setEdit($ed){
-        $this->Edit = $ed;
+        $this->edit = $ed;
     }
     public function __toString(){
         return "Emri: ".$this->Emri.",ngjyra ".$this->Ngjyra."dhe pershkrimi".$this->pershkrimi;

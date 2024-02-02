@@ -131,18 +131,7 @@ $tablet= $strep->getAllTabletet();
 </div>
 </div>
    <?php include('footer.php')?>
-<style>
-    #b1{
-    margin-top: 10px;
-    color: black;
-    width: 100px;
-    height: 45px;
-    border:none;
-} 
-#b1 a{
-    color:black;
-}
-</style>
+
 </body>
 
 
