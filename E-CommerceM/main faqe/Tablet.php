@@ -24,11 +24,30 @@ $tablet = $p->getAllTabletet();
         
     if (isset($_SESSION['roli'])) {
     if($_SESSION['roli']=="admin"){
-       echo"<button id='b1'>
-            <a href='Dashboard.php'>Dashboard</a>
-            </button>";
-         }
+       echo"               
+     <button id='b1'>
+     <a class = 'Dash' href='Dashboard.php'>Dashboard</a>
+     </button>
+     <style>
+     #b1{
+       margin-top:12px;
+       background-color:yellow;
+       height:40px;
+     }
+     .Dash{
+       font-style: italic;
+       color:red;
+       text-decoration:none;
+       font-weight:bold;
+
+       
+     }
+     
+     
+     </style>";
+    }
         }
+        
  require_once "DatabaseConnection.php";
 include_once "TabletetRepository.php";
 
