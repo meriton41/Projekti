@@ -78,29 +78,28 @@ $computer = $p->getAllComputers();
           <img src="https://assets.brack.ch/images2/7/9/4/215230497/215230497_xxl.jpg">
         
 
-
-        <?php foreach ($computer as $computers) { ?>
-            <a href="Main.php" id="produkti"><img src="<?php echo $computers['img']?>"   >
-              <br><a href="" id="emri"> <?php echo $computers['emri']?> </a>
-              <p class="pershkrimi"><?php echo $computers['pershkrimi']?></p>
-            </a>
-           <?php } ?>
-
-
-        </div>
-      <br><br><br>
-      <br><br>
-     
+          <?php foreach ($computer as $computers) { ?>
+              <div class="s5">
+              <a href="Main.php" id="produkti"><img src="<?php echo $computers['img']?>"   >
+                <br><a href="" id="emri"> <?php echo $computers['emri']?> </a>
+                <p class="pershkrimi"><?php echo $computers['pershkrimi']?></p>
+              </a></div>
+             <?php } ?>
+                </div>
+                  <br><br><br>
+                <br><br>
       <?php include('footer.php')?>
-          
-    <style>
+        
+      <style>
+        .s5{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+      </style>
 
-      #emri{
-        margin-left: 13%;
-      }
-      .pershkrimi{
-        margin-left: 9%;
-      }
-    </style>
+
 </body>
 </html>
