@@ -78,23 +78,29 @@ $computer = $p->getAllComputers();
           <img src="https://assets.brack.ch/images2/7/9/4/215230497/215230497_xxl.jpg">
         
 
+
         <?php foreach ($computer as $computers) { ?>
-
-        <a href="Main.php"><img src="<?php echo $computers['img']?>"   >
-            <a href=""> <?php echo $computers['emri']?> </a>
-            <p class="meriton2"><?php echo $computers['pershkrimi']?></p>
-           </a>
+            <a href="Main.php" id="produkti"><img src="<?php echo $computers['img']?>"   >
+              <br><a href="" id="emri"> <?php echo $computers['emri']?> </a>
+              <p class="pershkrimi"><?php echo $computers['pershkrimi']?></p>
+            </a>
            <?php } ?>
-      </div>
 
+
+        </div>
       <br><br><br>
-
-
-
       <br><br>
      
-  
       <?php include('footer.php')?>
-      
+          
+    <style>
+
+      #emri{
+        margin-left: 13%;
+      }
+      .pershkrimi{
+        margin-left: 9%;
+      }
+    </style>
 </body>
 </html>

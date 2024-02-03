@@ -29,7 +29,7 @@ if (isset($_POST['submitbtn'])) {
     <head>
     </head>
     <body>
-    <h2>Register</h2>
+    <h3>Add Computer or Server</h3>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">  
         <label>Emri:</label>    
         <input type="text" name="emri" ><br>
@@ -49,14 +49,17 @@ if (isset($_POST['submitbtn'])) {
     </body>
     <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: Circular,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
+
 }
-h2{
+h3{
     display: flex;
     justify-content: center;
     align-items:center;
-    font-size:40px;
+    font-size: 22px;
+
+    
 }
 label{
     font-size:15px;
