@@ -77,13 +77,13 @@ $computer = $p->getAllComputers();
           <img src="https://assets.brack.ch/images2/8/5/9/215231958/215231958_xxl.jpg">
           <img src="https://assets.brack.ch/images2/7/9/4/215230497/215230497_xxl.jpg">
         
-        </div>
+
         <?php foreach ($computer as $computers) { ?>
-    <div class="s5">
-        <a href=""><img src="<?php echo $computers['img']?>  width="200px" height="200px">
+
+        <a href="Main.php"><img src="<?php echo $computers['img']?>"   >
             <a href=""> <?php echo $computers['emri']?> </a>
             <p class="meriton2"><?php echo $computers['pershkrimi']?></p>
-           </a></div>
+           </a>
            <?php } ?>
       </div>
 
