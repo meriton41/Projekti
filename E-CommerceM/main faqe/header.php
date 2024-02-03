@@ -157,10 +157,10 @@ nav {
     padding-top: 5%;
 }
 /*Responsiviteti*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .search-container {
-        margin-top: 3%; 
-        margin-left: 13%;
+        margin-top: 30%; 
+        margin-left: 113%;
         width: 30%;
         height: 20%;
     }
