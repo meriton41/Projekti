@@ -118,7 +118,7 @@ $paisja= $strep->getAllPaisjet();
            </a></div>
            <?php foreach ($paisja as $telefon) { ?>
     <div class="s5">
-        <a href=""><img src="<?php echo $telefon['img']?> " alt="SamsunNote10" width="200px" height="200px">
+        <a href=""><img src="<?php echo $telefon['img']?> " alt="Samsung Note10" width="200px" height="200px">
             <a href=""> <?php echo $telefon['Emri']?> </a>
             <p class="meriton1"><?php echo $telefon['pershkrimi']?></p>
         </a></div>

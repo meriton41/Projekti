@@ -121,7 +121,7 @@ $tablet= $strep->getAllTabletet();
            </a></div>
            <?php foreach ($tablet as $tablet) { ?>
     <div class="s5">
-        <a href=""><img src="<?php echo $tablet['img']?> " alt="SamsunNote10" width="200px" height="200px">
+        <a href=""><img src="<?php echo $tablet['img']?> " alt="Samsung Note10" width="200px" height="200px">
             <a href=""> <?php echo $tablet['Emri']?> </a>
             <p class="meriton2"><?php echo $tablet['pershkrimi']?></p>
            </a></div>
