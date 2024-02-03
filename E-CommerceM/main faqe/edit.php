@@ -2,7 +2,7 @@
 session_start();
 include 'PaisjetRepository.php'; 
 $id = $_GET['Id'];//e merr id e Paisjes
-$editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown";
+$editedBy = isset($_SESSION['email']) ? "Edited By: " . $_SESSION['email'] : "Edited By: Unknown";
 $strep = new PaisjetRepository();
 $paisja = $strep->getPaisjaById($id);
 ?>

@@ -3,7 +3,7 @@
 session_start();
 include 'ComputersRepository.php';
 $id = $_GET['P_id'];
-$editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown"; 
+$editedBy = isset($_SESSION['email']) ? "Edited By: " . $_SESSION['email'] : "Edited By: Unknown"; 
 $strep = new ComputersRepository();
 $computers = $strep->getComputerByID($id);
 

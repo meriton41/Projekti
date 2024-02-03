@@ -2,7 +2,7 @@
 session_start();
 include 'TabletetRepository.php'; 
 $id = $_GET['Id'];//e merr id e Computerit
-$editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown"; 
+$editedBy = isset($_SESSION['email']) ? "Edited By: " . $_SESSION['email'] : "Edited By: Unknown"; 
 $strep = new TabletetRepository();
 $tablet = $strep->getTabletById($id);
 ?>
