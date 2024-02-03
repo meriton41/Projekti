@@ -43,7 +43,7 @@
             $sql = "UPDATE computer SET emri=?, ngjyra=?, cmimi=?, memoria=?, img=?, pershkrimi=?, edit=? WHERE P_id=?";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([ $id,$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit]);
+            $statement->execute([$emri, $ngjyra, $cmimi, $memoria, $img, $pershkrimi, $edit, $id ]);
 
             echo "<script>alert('Paisja u ndryshua me sukses!')</script>";
 
