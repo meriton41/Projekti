@@ -51,6 +51,11 @@
 
 
   @media screen and (max-width: 800px) {
+
+    body{
+      color: black;
+      flex-wrap:wrap;
+    }
     .column {
       -ms-flex: 50%;
       flex: 50%;

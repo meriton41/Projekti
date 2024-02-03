@@ -91,6 +91,8 @@ $computer = $p->getAllComputers();
       <?php include('footer.php')?>
         
       <style>
+      
+        
         .s5{
     display:flex;
     flex-direction: column;
