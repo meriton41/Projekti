@@ -2,6 +2,7 @@
 session_start();
 include_once 'Paisjet.php';
 include_once 'PaisjetRepository.php';
+
 $addedBy = isset($_SESSION['email']) ? "Added By: " . $_SESSION['email'] : "Added By: Unknown";
 
 if (isset($_POST['submitbtn'])) {
@@ -28,7 +29,7 @@ if (isset($_POST['submitbtn'])) {
     <head>
     </head>
     <body>
-        <h2>Register</h2>
+        <h2>Register Phone</h2>
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">  
         <label>Emri:</label>    
         <input type="text" name="emri" ><br>
