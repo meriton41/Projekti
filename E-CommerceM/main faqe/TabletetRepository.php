@@ -40,7 +40,7 @@
         }
 
 
-        //Pjesa tjeter e funksioneve CRUD: update 
+        //Pjesa tjeter e funksioneve CRUD:
         //dergohet parametri ne baze te cilit e identifikojme paisjen (ne kete rast id, por mund te jete edhe ndonje atribut tjeter) dhe parametrat e tjere qe mund t'i ndryshojme (emri, mbiemri, etj...)
         public function editTablet($id, $emri, $ngjyra, $cmimi, $memoria,$img,$pershkrimi,$edit){
             $conn = $this->connection;
