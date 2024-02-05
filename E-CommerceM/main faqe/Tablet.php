@@ -58,24 +58,24 @@ $tablet= $strep->getAllTabletet();
 
 <div class="d2">
     <div class="Iphone">
-        <h2>Iphone</h2>
+        <h2>Tablet</h2>
     </div>
     
 <div class="a0">
     <div class="a1">
         <a href=""><img src="2-removebg-preview.png" alt="Iphone15" width="200px">
-        <a href="">Iphone 15 Pro Max</a>
-        <p class="meriton2">Bardhe;256GB;1400$</p>
+        <a href="">Tablet Apple M3</a>
+        <p class="meriton2">Gray;256GB;800$</p>
         </a></div>
     <div class="a2"> 
         <a href="#"><img src="https://imgsrv.toppreise.ch/img/684619/720-2a050d" alt="Iphone14" width="200px">
-        <a href="#"> Iphone 14 Pro Max </a>
-        <p class="meriton2">Bardhe;256GB;1400$</p>
+        <a href="#"> Tablet Apple M4 </a>
+        <p class="meriton2">Gray;256GB;1000$</p>
        </a></div>
     <div class="a3">
          <a href="#"><img src="https://imgsrv.toppreise.ch/img/706937/720-a65f8e" alt="Iphone13" width="200px" >
-        <a href="#"> Iphone 13 Pro Max </a>
-        <p class="meriton2">Bardhe;256GB;1400$</p>
+        <a href="#"> Tablet Apple M5 </a>
+        <p class="meriton2">Black;1TB;1400$</p>
         </a></div>
     <div class="a4"> 
         <a href="#"><img src="iphone12-removebg-preview.png" alt="Iphone12" width="270px">
@@ -96,7 +96,7 @@ $tablet= $strep->getAllTabletet();
 
 <div class="samsung">
     <div class="samsung1">
-       <h2> Samsung </h2>
+       <h2> Tablet </h2>
     </div>
 <div class="d3">
     <div class="s1">
