@@ -3,7 +3,7 @@ session_start();
 include_once 'PCandServers.php';
 include_once 'ComputersRepository.php';
 
-$addedBy = isset($_SESSION['name']) ? "Added By: " . $_SESSION['name'] : "Added By: Unknown";
+$addedBy = isset($_SESSION['email']) ? "Added By: " . $_SESSION['email'] : "Added By: Unknown";
 
 if (isset($_POST['submitbtn'])) {
    
