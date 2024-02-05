@@ -5,10 +5,9 @@ include_once 'PaisjetRepository.php';
 
 $addedBy = isset($_SESSION['email']) ? "Added By: " . $_SESSION['email'] : "Added By: Unknown";
 
-
 if (isset($_POST['submitbtn'])) {
    
-    $emri = $_POST['emri']; //meret nga name i formularitHTML
+    $emri = $_POST['emri']; 
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
     $memoria = $_POST['memoria'];
