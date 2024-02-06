@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+    if(isset($_SESSION['email'])){
+        header("location:Main.php");
+        die;
+    }
     include("db.php");
 
         if($_SERVER['REQUEST_METHOD'] == "POST"){

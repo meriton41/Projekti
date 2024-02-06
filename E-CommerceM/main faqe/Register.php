@@ -7,7 +7,7 @@ $addedBy = isset($_SESSION['email']) ? "Added By: " . $_SESSION['email'] : "Adde
 
 if (isset($_POST['submitbtn'])) {
    
-    $emri = $_POST['emri']; 
+    $emri = $_POST['emri']; //meret nga name vendosur ne input 
     $ngjyra = $_POST['ngjyra'];
     $cmimi = $_POST['cmimi'];
     $memoria = $_POST['memoria'];

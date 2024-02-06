@@ -34,7 +34,7 @@ $paisja = $p->getAllPaisjet();
                position:relative;
              }
               .Dash{
-                color:red;
+                color:blue;
                font-style: italic;
                text-decoration:none;
                font-weight:bold;

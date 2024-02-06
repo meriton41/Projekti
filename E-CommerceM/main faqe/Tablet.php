@@ -36,7 +36,7 @@ $tablet = $p->getAllTabletet();
      }
      .Dash{
        font-style: italic;
-       color:red;
+       color:blue;
        text-decoration:none;
        font-weight:bold;
 
