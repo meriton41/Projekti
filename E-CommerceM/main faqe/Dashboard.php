@@ -1,15 +1,24 @@
-<?php 
+<?php
+// Fillimi i sesionit
 session_start();
+
+// Kontrollon nëse sesioni përmban variablën 'name'
 if (!isset($_SESSION['email'])) {
+    // Nëse 'name' nuk ekziston, përdoruesi drejtohet në formën e identifikimit
     header("Location: LoginForm1.php");
+    // Mbyllet skripti për të shmangur ekzekutimin e kodit të tjerë pas drejtimin e faqes
+    exit;
+}
+
+// Kontrollon nëse roli i përdoruesit nuk është 'admin'
+if ($_SESSION['roli'] !== 'admin') {
+    // Nëse roli nuk është 'admin', përdoruesi drejtohet përsëri në formën e identifikimit
+    header("Location: LoginForm1.php");
+    // Mbyllet skripti për të shmangur ekzekutimin e kodit të tjerë pas drejtimin e faqes
     exit;
 }
 
 
-if ( $_SESSION['roli'] !== 'admin') {
-    header("Location: LoginForm1.php");
-  exit;
-}
 include "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
 include_once "TabletetRepository.php";
