@@ -1,5 +1,15 @@
 <?php 
+session_start();
+if (!isset($_SESSION['name'])) {
+    header("Location: loginform.php");
+    exit;
+}
 
+
+if ( $_SESSION['roli'] !== 'admin') {
+    header("Location: loginform.php");
+  exit;
+}
 include "DatabaseConnection.php";
 include_once "PaisjetRepository.php";
 include_once "TabletetRepository.php";
