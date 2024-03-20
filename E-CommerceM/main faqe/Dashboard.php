@@ -1,13 +1,13 @@
 <?php 
 session_start();
-if (!isset($_SESSION['name'])) {
-    header("Location: loginform.php");
+if (!isset($_SESSION['email'])) {
+    header("Location: LoginForm1.php");
     exit;
 }
 
 
 if ( $_SESSION['roli'] !== 'admin') {
-    header("Location: loginform.php");
+    header("Location: LoginForm1.php");
   exit;
 }
 include "DatabaseConnection.php";
