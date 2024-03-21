@@ -2,9 +2,9 @@
 // Fillimi i sesionit
 session_start();
 
-// Kontrollon nëse sesioni përmban variablën 'name'
+// Kontrollon nëse sesioni përmban variablën 'email'
 if (!isset($_SESSION['email'])) {
-    // Nëse 'name' nuk ekziston, përdoruesi drejtohet në formën e identifikimit
+    // Nëse 'email' nuk ekziston, përdoruesi drejtohet në formën e identifikimit
     header("Location: LoginForm1.php");
     // Mbyllet skripti për të shmangur ekzekutimin e kodit të tjerë pas drejtimin e faqes
     exit;
